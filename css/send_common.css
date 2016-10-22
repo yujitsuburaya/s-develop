@@ -59,10 +59,6 @@ input, button, textarea, select {
       vertical-align: middle;
       text-decoration: none;
       font-size: 15px; }
-      .common-top-nav .nav-container-underlay .arrow-left a {
-        display: block;
-        width: 8px;
-        height: 8px; }
       .common-top-nav .nav-container-underlay .arrow-left:before {
         position: absolute;
         margin: auto;
@@ -250,13 +246,7 @@ input, button, textarea, select {
         font-size: 6px;
         text-align: center; }
 
-/* Common Parts */
-.common-title-bar {
-  background-color: #f7f7f7;
-  width: 100%;
-  height: 50px;
-  text-align: center; }
-
+/* 01_Common Parts */
 .common-primary-button {
   color: #f7f7f7;
   background-color: #e4504b;
@@ -294,9 +284,6 @@ input, button, textarea, select {
   height: 123px;
   background-color: #7a7a7a; }
 
-.common-none {
-  display: none; }
-
 .common-location:before {
   content: url(../images_new/icon/icon_location.png); }
 
@@ -309,4 +296,51 @@ input, button, textarea, select {
   padding: 0.5em 2em;
   border-radius: 8px; }
 
-/*# sourceMappingURL=send_common.css.map */
+/* 02_Common Layout */
+.center {
+  text-align: center; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.common-none {
+  display: none; }
+
+.none {
+  display: none; }
+
+.mt {
+  margin-top: 0.5em; }
+
+.mb {
+  margin-bottom: 0.5em; }
+
+.common-title-section {
+  background-color: #f7f7f7;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em 0;
+  border-top: 1px solid #7a7a7a;
+  margin: 0 0 0.5em 0; }
+
+/* 03_Common Font */
+.smallest {
+  font-size: 10px; }
+
+.small {
+  font-size: 12px; }
+
+.normal {
+  font-size: 14px; }
+
+.bigger {
+  font-size: 16px; }
+
+.biggest {
+  font-size: 18px; }
+
+.light {
+  color: #7a7a7a; }

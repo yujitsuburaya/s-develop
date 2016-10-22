@@ -16,98 +16,132 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/order_sheet.css" />
+<link rel="stylesheet" media="all" href="./css/slidebars.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
+
+
+  <div>
+    <!-- ヘッダー -->
+    <div class="">
+      共通ヘッダー(西尾さんお願いします。)
+    </div>
+    <section class="common-title-section">
+      <h1>オーダーシート</h1>
+    </section>
+    <div>
+      <span class="button-left mb">
+        <button class="common-primary-button ">新規</button>
+      </span>
+      <span class="button-right mb">
+        <button class="common-secondary-button">変更・履歴</button>
+      </span>
+    </div>
+    <main>
+      <ul class="cf">
+        <li>
+          <div class="part-left">
+            <p class="center">
+              <img src="./images_new/S__sample.jpg" alt="[TODO]" width="80%"/>
+            </p>
+            <p class="center">
+              <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="70%"/>
+            </p>
+          </div>
+          <div class="part-center">
+            <p class="small">いい感じの赤いトマト(100g入)</p>
+            <p class="small">北海道産</p>
+            <p class="small">¥150 / pc(pcってなんだ？)</p>
+            <p class="smallest light"><span>徳島県</span><span>徳島有機ファーム</span></p>
+
+          </div>
+          <div class="part-right" id="count_value_area">
+            <div class="counter">
+              <span onclick="counter(-1)" class="counter-minus">-</span>
+              <span id="count_value_text" class="counter-num">0</span>
+              <input type="hidden" name="count" id="count_value" value="0">
+              <span onclick="counter(1)" class="counter-plus">+</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="cf">
+        <li>
+          <div class="part-left">
+            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
+            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+          </div>
+          <div class="part-center">
+            <p>いい感じの赤いトマト(100g入)</p>
+            <p>北海道産</p>
+            <p>¥150 / pc(pcってなんだ？)</p>
+            <span></span>
+          </div>
+          <div class="part-right" id="count_value_area">
+            <div class="counter">
+              <span onclick="counter(-1)" class="counter-minus">-</span>
+              <span id="count_value_text" class="counter-num">0</span>
+              <input type="hidden" name="count" id="count_value" value="0">
+              <span onclick="counter(1)" class="counter-plus">+</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="cf">
+        <li>
+          <div class="part-left">
+            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
+            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+          </div>
+          <div class="part-center">
+            <p>いい感じの赤いトマト(100g入)</p>
+            <p>北海道産</p>
+            <p>¥150 / pc(pcってなんだ？)</p>
+            <span></span>
+          </div>
+          <div class="part-right" id="count_value_area">
+            <div class="counter">
+              <span onclick="counter(-1)" class="counter-minus">-</span>
+              <span id="count_value_text" class="counter-num">0</span>
+              <input type="hidden" name="count" id="count_value" value="0">
+              <span onclick="counter(1)" class="counter-plus">+</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="cf">
+        <li>
+          <div class="part-left">
+            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
+            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+          </div>
+          <div class="part-center">
+            <p>いい感じの赤いトマト(100g入)</p>
+            <p>北海道産</p>
+            <p>¥150 / pc(pcってなんだ？)</p>
+            <span></span>
+          </div>
+          <div class="part-right" id="count_value_area">
+            <div class="counter">
+              <span onclick="counter(-1)" class="counter-minus">-</span>
+              <span id="count_value_text" class="counter-num">0</span>
+              <input type="hidden" name="count" id="count_value" value="0">
+              <span onclick="counter(1)" class="counter-plus">+</span>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </main>
   </div>
-
-  <section class="common-title-bar">
-    <h1>オーダーシート</h1>
-  </section>
-
-  <button class="common-primary-button">新規</button>
-  <button class="common-secondary-button">変更・履歴</button>
-
-  <main>
-
-  <ul class="cf">
-    <li>
-      <div class="part-left">
-        アイコンを置く
-      </div>
-      <div class="part-center">
-        <span>いい感じの赤いトマト / </span>
-        <span>北海道産</span>
-        <span></span>
-      </div>
-      <div class="part-right" id="count_value_area">
-        <button onClick="counter(-1)">-</button>
-        <p id="count_value_text">0</p>
-        <input type="hidden" name="count" id="count_value" value="0">
-        <button onClick="counter(1)">+</button>
-      </div>
-    </li>
-  </ul>
-  <ul class="cf">
-    <li>
-      <div class="part-left">
-        アイコンを置く
-      </div>
-      <div class="part-center">
-        <span>いい感じの赤いトマト / </span>
-        <span>北海道産</span>
-        <span></span>
-      </div>
-        <span>増えるカウンタ</span>
-      <div class="part-right"></div>
-    </li>
-  </ul>
-  <ul class="cf">
-    <li>
-      <div class="part-left">
-        アイコンを置く
-      </div>
-      <div class="part-center">
-        <span>いい感じの赤いトマト / </span>
-        <span>北海道産</span>
-        <span></span>
-      </div>
-        <span>増えるカウンタ</span>
-      <div class="part-right"></div>
-    </li>
-  </ul>
-  <ul class="cf">
-    <li>
-      <div class="part-left">
-        アイコンを置く
-      </div>
-      <div class="part-center">
-        <span>いい感じの赤いトマト / </span>
-        <span>北海道産</span>
-        <span></span>
-      </div>
-        <span>増えるカウンタ</span>
-      <div class="part-right"></div>
-    </li>
-  </ul>
-  </main>
-
-</div>
-<script type="text/javascript">
-  function counter(i) {
-    var pre_count = Number($('#count_value').val());
-    var count = pre_count + Number(i);
-    if (count < 0) {
-      count = 0;
-    }
-    $('#count_value').val(count);
-    $('#count_value_text').text(count);
-  }
-</script>
 </body>
+<script src="js/counter.js"></script>

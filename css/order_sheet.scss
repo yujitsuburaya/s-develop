@@ -1,0 +1,52 @@
+@import "send_common.scss";
+
+// [TEMP] delete later
+ul{
+  border-bottom: 1px solid $color-lightest;
+}
+
+.part-left {
+  float: left;
+  width: 10%;
+}
+
+.part-center {
+  float: left;
+  width: 60%;
+}
+
+.part-right {
+  width: 30%;
+  float: right;
+}
+
+.button-left {
+  margin-left: 25%;
+  float: left;
+}
+
+.button-right {
+  float: right;
+  margin-right: 25%;
+}
+
+// counter
+.counter {
+  border: 1px solid $color-light;
+  color: $color-light;
+  font-weight:bold;
+  text-align:center;
+  padding:0.5em 1em;
+  border-radius: 13px;
+  margin: 0.5em;
+
+  .counter-minus {
+    float: left;
+  }
+  .counter-plus {
+    float: right;
+  }
+  .counter-num {
+    font-size: $font-biggest;
+  }
+}
