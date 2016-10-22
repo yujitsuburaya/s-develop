@@ -21,82 +21,9 @@ input, button, textarea, select {
   border-radius: 0;
   outline: none; }
 
-#sb-site {
-  padding-top: 45px !important; }
-
-.common-top-nav {
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
-  position: fixed;
-  top: 0;
-  height: 40px;
-  z-index: 100; }
-  .common-top-nav .nav-container {
-    position: relative; }
-    .common-top-nav .nav-container #mm_btn {
-      position: absolute;
-      top: 12px;
-      left: 10px; }
-    .common-top-nav .nav-container .h_logo {
-      position: absolute;
-      top: 7px;
-      left: 45%; }
-
 .sb-slidebar {
-  background-color: #494949 !important;
-  color: #ffffff; }
-
-.mm_prf {
   background-color: #2e2e2e;
-  padding: 10px 2%;
-  width: 96%; }
-  .mm_prf li:nth-child(1) {
-    float: left;
-    width: 30%;
-    overflow: hidden; }
-    .mm_prf li:nth-child(1) img {
-      width: 50px;
-      border-radius: 25px; }
-  .mm_prf li:nth-child(2) {
-    font-size: 12px;
-    float: right;
-    width: 70%;
-    padding-top: 15px; }
-
-.mm_list {
-  padding: 10px 2%;
-  background-color: #494949;
-  font-size: 12px; }
-  .mm_list a {
-    padding: 10px 0;
-    color: #ffffff;
-    display: block; }
-  .mm_list li {
-    padding-left: 15%; }
-    .mm_list li:nth-child(1) {
-      background: url(../images_new/icon/icon_sidemenu-1.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(2) {
-      background: url(../images_new/icon/icon_sidemenu-2.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(3) {
-      background: url(../images_new/icon/icon_sidemenu-8.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(4) {
-      background: url(../images_new/icon/icon_sidemenu-3.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(5) {
-      background: url(../images_new/icon/icon_sidemenu-9.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(6) {
-      background: url(../images_new/icon/icon_sidemenu-5.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(7) {
-      background: url(../images_new/icon/icon_sidemenu-6.png) no-repeat 3% 50%;
-      background-size: 20px; }
-    .mm_list li:nth-child(8) {
-      background: url(../images_new/icon/icon_sidemenu-7.png) no-repeat 3% 50%;
-      background-size: 20px; }
+  color: #ffffff; }
 
 .pd-serach-form input[type='text'] {
   width: 100%;
@@ -257,4 +184,54 @@ input, button, textarea, select {
   padding: 0.5em 2em;
   border-radius: 8px; }
 
-/*# sourceMappingURL=send_common.css.map */
+.pd-detail-frame {
+  border-bottom: 0.5px solid #f7f7f7; }
+  .pd-detail-frame div:nth-child(1) {
+    position: relative; }
+    .pd-detail-frame div:nth-child(1) .pd-reg {
+      position: absolute;
+      width: 50px;
+      right: 10px;
+      top: 10px; }
+    .pd-detail-frame div:nth-child(1) .price {
+      width: 30%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      left: 0;
+      bottom: 10px;
+      padding: 5px; }
+  .pd-detail-frame div:nth-child(2) {
+    padding: 5px 2%; }
+    .pd-detail-frame div:nth-child(2) .pd-name {
+      font-size: 16px; }
+    .pd-detail-frame div:nth-child(2) .pd-location {
+      font-size: 10px;
+      color: #bababa;
+      margin-top: 3px;
+      padding-left: 20px;
+      background: url(../images_new/icon/icon_location.png) no-repeat 0 50%;
+      background-size: 12px; }
+    .pd-detail-frame div:nth-child(2) .pd-status {
+      margin: 3px 0; }
+      .pd-detail-frame div:nth-child(2) .pd-status li {
+        border: 1px solid #4ab091;
+        color: #4ab091;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 10px;
+        float: left;
+        padding: 3px 10px;
+        max-width: 100px; }
+        .pd-detail-frame div:nth-child(2) .pd-status li:not(:last-child) {
+          margin-right: 5px; }
+    .pd-detail-frame div:nth-child(2) .pd-detail-text {
+      font-size: 12px;
+      color: #2e2e2e;
+      padding: 10px 2%;
+      border-top: 0.5px solid #f7f7f7;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=product_detail.css.map */
