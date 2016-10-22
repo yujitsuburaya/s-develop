@@ -48,6 +48,148 @@ input, button, textarea, select {
 	border-radius: 0;
 	outline: none;
 }
+#sb-site{
+  padding-top:45px !important;
+  padding-bottom: 48px !important;
+}
+.common-top-nav{
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
+  position: fixed;
+  top: 0;
+  height: 40px;
+  z-index: 100;
+  .nav-container{
+    position: relative;
+    #mm_btn{
+      position: absolute;
+      top: 12px;
+      left: 10px;
+    }
+    .h_logo{
+      position: absolute;
+      top: 7px;
+      left:45%;
+    }
+  }
+  .nav-container-underlay{
+    position: relative;
+    .arrow-left{
+      position: relative;
+      display: inline-block;
+      padding: 0 0 0 16px;
+      color: #000;
+      vertical-align: middle;
+      text-decoration: none;
+      font-size: 15px;
+
+      &:before{
+      position: absolute;
+      margin: auto;
+      content: "";
+      vertical-align: middle;
+      top: 3px;
+      left: 10px;
+      width: 8px;
+      height: 8px;
+      border-top: 3px solid $color-darkest;
+      border-right: 3px solid $color-darkest;
+      -webkit-transform: rotate(-135deg);
+      transform: rotate(-135deg);
+      }
+    }
+
+    #mm_btn{
+      position: absolute;
+      top: 12px;
+      left: 30px;
+    }
+    .h_logo{
+      position: absolute;
+      top: 7px;
+      left:45%;
+    }
+  }
+
+
+}
+
+
+.sb-slidebar{
+  background-color: #494949 !important;
+  color: #ffffff;
+}
+.mm_prf{
+  background-color: $color-dark;
+  padding:10px 2%;
+  width: 96%;
+  li{
+    &:nth-child(1){
+      float: left;
+      width: 30%;
+      overflow: hidden;
+      img{
+        width: 50px;
+        border-radius: 25px;
+      }
+    }
+    &:nth-child(2){
+      font-size: $font-small;
+      float: right;
+      width: 70%;
+      padding-top: 15px;
+
+    }
+
+  }
+
+}
+.mm_list{
+  padding:10px 2%;
+  background-color: #494949;
+  font-size: $font-small;
+  a{
+    padding: 10px 0;
+    color: #ffffff;
+    display: block;
+  }
+  li{
+    padding-left:15%;
+    &:nth-child(1){
+      background:url(../images_new/icon/icon_sidemenu-1.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(2){
+      background:url(../images_new/icon/icon_sidemenu-2.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(3){
+      background:url(../images_new/icon/icon_sidemenu-8.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(4){
+      background:url(../images_new/icon/icon_sidemenu-3.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(5){
+      background:url(../images_new/icon/icon_sidemenu-9.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(6){
+      background:url(../images_new/icon/icon_sidemenu-5.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(7){
+      background:url(../images_new/icon/icon_sidemenu-6.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+    &:nth-child(8){
+      background:url(../images_new/icon/icon_sidemenu-7.png) no-repeat 3% 50%;
+      background-size:20px;
+    }
+
+  }
+}
 
 .pd-serach-form {
   input[type='text'] {
@@ -139,30 +281,42 @@ input, button, textarea, select {
     }
   }
 }//pg-list-frame
-.fix-request-btn{
-  border: 1px solid $color-red;
-  color: $color-red;
-  text-align: center;
-  border-radius:20px;
-  font-size: $font-smallest;
-  padding:5px 0;
-  width:55%;
-  margin-left:auto;
-  background:url(../images_new/icon/icon_plus_red.png) rgba(255,255,255,.8) no-repeat 95% 50%;
-  background-size:12px;
-}
-.fix-order-btn{
-  background-color:$color-red;
-  color:#ffffff;
-  font-size:$font-bigger;
-  font-weight:bold;
-  text-align:center;
-  padding:10px 0;
-  background:url(../images_new/icon/icon_order.png) $color-red no-repeat 15% 50%;
-  background-size:25px;
+.fix-order-frame{
+  width: 100%;
+  position: fixed;
+  bottom: 48px;
+
+  .fix-request-btn{
+    border: 1px solid $color-red;
+    color: $color-red;
+    text-align: center;
+    border-radius:20px;
+    font-size: $font-smallest;
+    padding:5px 0;
+    width:55%;
+    margin-left:auto;
+    background:url(../images_new/icon/icon_plus_red.png) rgba(255,255,255,.8) no-repeat 95% 50%;
+    background-size:12px;
+  }
+  .fix-order-btn{
+    margin-top: 5px;
+    background-color:$color-red;
+    color:#ffffff;
+    font-size:$font-bigger;
+    font-weight:bold;
+    text-align:center;
+    padding:10px 0;
+    background:url(../images_new/icon/icon_order.png) $color-red no-repeat 15% 50%;
+    background-size:25px;
+  }
 }
 
+
 .footer_frame{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
   .nav_list{
     width:100%;
     li{
@@ -172,6 +326,7 @@ input, button, textarea, select {
       padding:3px 0;
       p{
         font-size:6px;
+        text-align: center;
       }
     }
   }

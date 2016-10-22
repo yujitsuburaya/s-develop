@@ -1,0 +1,237 @@
+body {
+  color: #545454;
+  font-size: 14px; }
+
+.cf {
+  display: inline-block; }
+  .cf:after {
+    clear: both; }
+
+.txtc {
+  text-align: center; }
+
+input, button, textarea, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none; }
+
+.sb-slidebar {
+  background-color: #2e2e2e;
+  color: #ffffff; }
+
+.pd-serach-form input[type='text'] {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 12px;
+  background: url(../images_new/icon/icon_search.png) #f7f7f7 no-repeat 2% 50%;
+  background-size: 20px; }
+
+.pd-search-category {
+  width: 100%; }
+  .pd-search-category li {
+    width: 100px;
+    text-align: center;
+    float: left;
+    color: #bababa;
+    font-size: 12px; }
+
+.pd-list-frame {
+  border-bottom: 0.5px solid #f7f7f7; }
+  .pd-list-frame div:nth-child(1) {
+    position: relative; }
+    .pd-list-frame div:nth-child(1) .pd-reg {
+      position: absolute;
+      width: 50px;
+      right: 10px;
+      top: 10px; }
+    .pd-list-frame div:nth-child(1) .price {
+      width: 30%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      left: 0;
+      bottom: 10px;
+      padding: 5px; }
+  .pd-list-frame div:nth-child(2) {
+    padding: 5px 2%; }
+    .pd-list-frame div:nth-child(2) .pd-name {
+      font-size: 16px; }
+    .pd-list-frame div:nth-child(2) .pd-location {
+      font-size: 10px;
+      color: #bababa;
+      margin-top: 3px;
+      padding-left: 20px;
+      background: url(../images_new/icon/icon_location.png) no-repeat 0 50%;
+      background-size: 12px; }
+    .pd-list-frame div:nth-child(2) .pd-status {
+      margin: 3px 0; }
+      .pd-list-frame div:nth-child(2) .pd-status li {
+        border: 1px solid #4ab091;
+        color: #4ab091;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 10px;
+        float: left;
+        padding: 3px 10px;
+        max-width: 100px; }
+        .pd-list-frame div:nth-child(2) .pd-status li:not(:last-child) {
+          margin-right: 5px; }
+    .pd-list-frame div:nth-child(2) .pd-list-text {
+      background-color: #f7f7f7;
+      font-size: 12px;
+      color: #2e2e2e;
+      padding: 5px 2%; }
+
+.fix-request-btn {
+  border: 1px solid #e4504b;
+  color: #e4504b;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 10px;
+  padding: 5px 0;
+  width: 55%;
+  margin-left: auto;
+  background: url(../images_new/icon/icon_plus_red.png) rgba(255, 255, 255, 0.8) no-repeat 95% 50%;
+  background-size: 12px; }
+
+.fix-order-btn {
+  background-color: #e4504b;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  background: url(../images_new/icon/icon_order.png) #e4504b no-repeat 15% 50%;
+  background-size: 25px; }
+
+.footer_frame .nav_list {
+  width: 100%; }
+  .footer_frame .nav_list li {
+    float: left;
+    text-align: center;
+    width: 20%;
+    padding: 3px 0; }
+    .footer_frame .nav_list li p {
+      font-size: 6px; }
+
+/* Common Parts */
+.common-title-bar {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100px;
+  text-align: center; }
+
+.common-primary-button {
+  color: #f7f7f7;
+  background-color: #e4504b;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px; }
+
+.common-secondary-button {
+  color: #7a7a7a;
+  background-color: #f7f7f7;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px; }
+
+.common-third-button {
+  color: #f7f7f7;
+  background-color: #4ab091;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 2em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px; }
+
+.common-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 123px;
+  background-color: #7a7a7a; }
+
+.common-none {
+  display: none; }
+
+.common-location:before {
+  content: url(../images_new/icon/icon_location.png);
+  width: 10px; }
+
+.common-tag {
+  border: 1px solid #4ab091;
+  color: #4ab091;
+  background-color: #f7f7f7;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em 2em;
+  border-radius: 8px; }
+
+.pd-detail-frame {
+  border-bottom: 0.5px solid #f7f7f7; }
+  .pd-detail-frame div:nth-child(1) {
+    position: relative; }
+    .pd-detail-frame div:nth-child(1) .pd-reg {
+      position: absolute;
+      width: 50px;
+      right: 10px;
+      top: 10px; }
+    .pd-detail-frame div:nth-child(1) .price {
+      width: 30%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      left: 0;
+      bottom: 10px;
+      padding: 5px; }
+  .pd-detail-frame div:nth-child(2) {
+    padding: 5px 2%; }
+    .pd-detail-frame div:nth-child(2) .pd-name {
+      font-size: 16px; }
+    .pd-detail-frame div:nth-child(2) .pd-location {
+      font-size: 10px;
+      color: #bababa;
+      margin-top: 3px;
+      padding-left: 20px;
+      background: url(../images_new/icon/icon_location.png) no-repeat 0 50%;
+      background-size: 12px; }
+    .pd-detail-frame div:nth-child(2) .pd-status {
+      margin: 3px 0; }
+      .pd-detail-frame div:nth-child(2) .pd-status li {
+        border: 1px solid #4ab091;
+        color: #4ab091;
+        text-align: center;
+        border-radius: 20px;
+        font-size: 10px;
+        float: left;
+        padding: 3px 10px;
+        max-width: 100px; }
+        .pd-detail-frame div:nth-child(2) .pd-status li:not(:last-child) {
+          margin-right: 5px; }
+    .pd-detail-frame div:nth-child(2) .pd-detail-text {
+      font-size: 12px;
+      color: #2e2e2e;
+      padding: 10px 2%;
+      border-top: 0.5px solid #f7f7f7;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=product_detail.css.map */
