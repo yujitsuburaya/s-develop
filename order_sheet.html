@@ -18,7 +18,7 @@
 <link rel="stylesheet" media="all" href="./css/reset.css" />
 <link rel="stylesheet" media="all" href="./css/style.css" />
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body id="">
 <div>
@@ -46,8 +46,12 @@
         <span>北海道産</span>
         <span></span>
       </div>
-        <span>増えるカウンタ</span>
-      <div class="part-right"></div>
+      <div class="part-right" id="count_value_area">
+        <button onClick="counter(-1)">-</button>
+        <p id="count_value_text">0</p>
+        <input type="hidden" name="count" id="count_value" value="0">
+        <button onClick="counter(1)">+</button>
+      </div>
     </li>
   </ul>
   <ul class="cf">
@@ -92,9 +96,18 @@
       <div class="part-right"></div>
     </li>
   </ul>
-
-
   </main>
 
 </div>
+<script type="text/javascript">
+  function counter(i) {
+    var pre_count = Number($('#count_value').val());
+    var count = pre_count + Number(i);
+    if (count < 0) {
+      count = 0;
+    }
+    $('#count_value').val(count);
+    $('#count_value_text').text(count);
+  }
+</script>
 </body>
