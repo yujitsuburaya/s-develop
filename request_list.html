@@ -28,31 +28,45 @@
   </div>
 
   <section class="common-title-bar">
-    <h1>リクエスト一覧</h1>
+    <h1>リクエスト詳細</h1>
   </section>
 
   <main>
-    <p>リクエストしている食材はありません。</p>
-    <p>出荷してほしい食材をリクエストしてみませんか？</p>
-
+    大きいボタン配置 あとで共有CSS書く
   </main>
-
   <main>
 
-
+        <table>
+          <tr>
+            <th>ID</th>
+            <td>123</td>
+          </tr>
+          <tr>
+            <th>カテゴリ/サブカテゴリ</th>
+            <td>野菜</td>
+          </tr>
+          <tr>
+            <th>食材</th>
+            <td>小松菜</td>
+          </tr>
+          <tr>
+            <th>希望価格</th>
+            <td>1円</td>
+          </tr>
+          <tr>
+            <th>画像</th>
+            <td>画像</td>
+          </tr>
+        </table>
+        <section>
+          メモ内容が入ります。
+        </section>
 
   </main>
+  <footer>
+    いろいろアイコンがあるやつ
+
+  </footer>
 
 </div>
-<script type="text/javascript">
-  function counter(i) {
-    var pre_count = Number($('#count_value').val());
-    var count = pre_count + Number(i);
-    if (count < 0) {
-      count = 0;
-    }
-    $('#count_value').val(count);
-    $('#count_value_text').text(count);
-  }
-</script>
 </body>
