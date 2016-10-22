@@ -185,3 +185,18 @@ input, button, textarea, select {
   text-align: center;
   padding: 0.5em 2em;
   border-radius: 8px; }
+
+.part-left {
+  float: left;
+  width: 10%;
+  background-color: #7a7a7a; }
+
+.part-center {
+  float: left;
+  width: 60%; }
+
+.part-right {
+  width: 30%; }
+
+ul {
+  background-color: #7a7a7a; }

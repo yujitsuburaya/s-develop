@@ -1,0 +1,20 @@
+@import "send_common.scss";
+
+.part-left {
+  float: left;
+  width: 10%;
+  background-color: $color-light;
+}
+
+.part-center {
+  float: left;
+  width: 60%;
+}
+
+.part-right{
+  width: 30%;
+}
+
+ul{
+  background-color: $color-lightest;
+}
