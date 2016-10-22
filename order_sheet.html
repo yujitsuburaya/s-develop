@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0,maximum-scale=2.0,user-scalable=yes,initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>SEND | センド</title>
+<meta name="description" content='SENDは産地から都市に"季節と食材"を届ける『走るファーマーズマーケット』です。生産者、シェフは無料の登録ですぐにお取引ができます。'>
+<meta property="og:title" content="SEND | センド">
+<meta property="og:image" content='https://send.farm/images/ogp.png'>
+<meta property="og:description" content='SENDは産地から都市に"季節と食材"を届ける『走るファーマーズマーケット』です。生産者、シェフは無料の登録ですぐにお取引ができます。'>
+<meta property="og:url" content="https://send.farm/">
+<meta property="og:site_name" content="SEND">
+<meta property="og:type" content="website">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<link rel="stylesheet" media="all" href="./css/reset.css" />
+<link rel="stylesheet" media="all" href="./css/style.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+<body id="">
+<div>
+  <!-- ヘッダー -->
+  <div class="">
+    共通ヘッダー
+  </div>
+
+  <section class="common-title-bar">
+    <h1>オーダーシート</h1>
+  </section>
+
+  <button class="common-primary-button">新規</button>
+  <button class="common-secondary-button">変更・履歴</button>
+
+  <main>
+
+  <ul class="cf">
+    <li>
+      <div class="part-left">
+        アイコンを置く
+      </div>
+      <div class="part-center">
+        <span>いい感じの赤いトマト / </span>
+        <span>北海道産</span>
+        <span></span>
+      </div>
+      <div class="part-right" id="count_value_area">
+        <button onClick="counter(-1)">-</button>
+        <p id="count_value_text">0</p>
+        <input type="hidden" name="count" id="count_value" value="0">
+        <button onClick="counter(1)">+</button>
+      </div>
+    </li>
+  </ul>
+  <ul class="cf">
+    <li>
+      <div class="part-left">
+        アイコンを置く
+      </div>
+      <div class="part-center">
+        <span>いい感じの赤いトマト / </span>
+        <span>北海道産</span>
+        <span></span>
+      </div>
+        <span>増えるカウンタ</span>
+      <div class="part-right"></div>
+    </li>
+  </ul>
+  <ul class="cf">
+    <li>
+      <div class="part-left">
+        アイコンを置く
+      </div>
+      <div class="part-center">
+        <span>いい感じの赤いトマト / </span>
+        <span>北海道産</span>
+        <span></span>
+      </div>
+        <span>増えるカウンタ</span>
+      <div class="part-right"></div>
+    </li>
+  </ul>
+  <ul class="cf">
+    <li>
+      <div class="part-left">
+        アイコンを置く
+      </div>
+      <div class="part-center">
+        <span>いい感じの赤いトマト / </span>
+        <span>北海道産</span>
+        <span></span>
+      </div>
+        <span>増えるカウンタ</span>
+      <div class="part-right"></div>
+    </li>
+  </ul>
+  </main>
+
+</div>
+<script type="text/javascript">
+  function counter(i) {
+    var pre_count = Number($('#count_value').val());
+    var count = pre_count + Number(i);
+    if (count < 0) {
+      count = 0;
+    }
+    $('#count_value').val(count);
+    $('#count_value_text').text(count);
+  }
+</script>
+</body>

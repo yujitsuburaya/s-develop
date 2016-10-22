@@ -17,23 +17,37 @@
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
 <link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/send_common.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-
-  <section class="common-title-bar">
-    <h1>オーダーシート</h1>
-  </section>
-
-  <p class="fix-request-btn">一覧にない食材をリクエストする</p>
-  <p class="fix-order-btn">オーダーシートに数量入力</p>
-
-  <button class="common-primary-button">新規</button>
-  <button class="common-primary-button">新規</button>
-
-
-</div>
+  <div class="">
+    <div class="common-title-bar">
+      <h1>オーダー履歴</h1>
+    </div>
+    <button>新規</button>
+    <button>変更・履歴</button>
+    <table>
+      <thead>
+        <tr>
+          <th>配送希望日</th>
+          <th>合計</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <time>10月 11日 (月)</time>
+            <span>備考メモ内容入ります</span>
+          </td>
+          <td>
+            <span>¥405</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <p>現在の合計金額</p>
+      <strong>¥3000</strong>
+  </div>
 </body>
