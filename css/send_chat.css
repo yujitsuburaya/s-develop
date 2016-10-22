@@ -59,10 +59,6 @@ input, button, textarea, select {
       vertical-align: middle;
       text-decoration: none;
       font-size: 15px; }
-      .common-top-nav .nav-container-underlay .arrow-left a {
-        display: block;
-        width: 8px;
-        height: 8px; }
       .common-top-nav .nav-container-underlay .arrow-left:before {
         position: absolute;
         margin: auto;
@@ -309,4 +305,124 @@ input, button, textarea, select {
   padding: 0.5em 2em;
   border-radius: 8px; }
 
-/*# sourceMappingURL=send_common.css.map */
+.show-msg-all {
+  text-align: center;
+  width: 90%;
+  margin: 5px auto;
+  padding-bottom: 5px;
+  border-bottom: solid 0.5px #f7f7f7;
+  font-size: 10px;
+  color: #bababa; }
+
+.chat-frame-send {
+  padding: 10px 4%;
+  width: 92%; }
+  .chat-frame-send .prfimg {
+    width: 16%;
+    float: left; }
+    .chat-frame-send .prfimg p {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative; }
+    .chat-frame-send .prfimg img {
+      position: absolute;
+      width: 150%;
+      left: -25%; }
+  .chat-frame-send .chat-msg {
+    width: 72%;
+    float: right;
+    background-color: #f7f7f7;
+    position: relative;
+    padding: 10px 4%;
+    border-radius: 10px; }
+    .chat-frame-send .chat-msg:after {
+      right: 100%;
+      top: 10%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-right-color: #f7f7f7;
+      border-width: 10px;
+      margin-top: -10px; }
+    .chat-frame-send .chat-msg .detail {
+      color: #080808;
+      font-size: 12px;
+      line-height: 18px; }
+    .chat-frame-send .chat-msg .date {
+      color: #bababa;
+      font-size: 10px;
+      text-align: right;
+      margin-top: 10px; }
+
+.chat-frame-user {
+  padding: 10px 4%;
+  width: 92%; }
+  .chat-frame-user .prfimg {
+    width: 16%;
+    float: right; }
+    .chat-frame-user .prfimg p {
+      width: 40px;
+      height: 40px;
+      border-radius: 20px;
+      overflow: hidden;
+      position: relative; }
+    .chat-frame-user .prfimg img {
+      position: absolute;
+      width: 100%; }
+  .chat-frame-user .chat-msg {
+    width: 72%;
+    float: left;
+    background-color: #009991;
+    position: relative;
+    padding: 10px 4%;
+    border-radius: 10px; }
+    .chat-frame-user .chat-msg:after {
+      left: 100%;
+      top: 10%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-left-color: #009991;
+      border-width: 10px;
+      margin-top: -10px; }
+    .chat-frame-user .chat-msg .detail {
+      color: #ffffff;
+      font-size: 12px;
+      line-height: 18px; }
+    .chat-frame-user .chat-msg .date {
+      color: #f7f7f7;
+      font-size: 10px;
+      margin-top: 10px; }
+
+.chat-input-frame {
+  width: 100%;
+  min-height: 40px;
+  position: fixed;
+  bottom: 48px;
+  background-color: #ffffff; }
+  .chat-input-frame .select-img-btn {
+    width: 10%;
+    float: left;
+    text-align: center; }
+    .chat-input-frame .select-img-btn img {
+      width: 90%; }
+  .chat-input-frame .chat-text {
+    width: 80%;
+    float: left; }
+  .chat-input-frame .chat-send-btn {
+    text-align: center;
+    width: 10%;
+    float: left;
+    font-size: 10px;
+    color: #dcdcdc;
+    padding-top: 10px; }
+
+/*# sourceMappingURL=send_chat.css.map */
