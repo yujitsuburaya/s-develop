@@ -50,6 +50,7 @@ input, button, textarea, select {
 }
 #sb-site{
   padding-top:45px !important;
+  padding-bottom: 48px !important;
 }
 .common-top-nav{
   width: 100%;
@@ -240,30 +241,42 @@ input, button, textarea, select {
     }
   }
 }//pg-list-frame
-.fix-request-btn{
-  border: 1px solid $color-red;
-  color: $color-red;
-  text-align: center;
-  border-radius:20px;
-  font-size: $font-smallest;
-  padding:5px 0;
-  width:55%;
-  margin-left:auto;
-  background:url(../images_new/icon/icon_plus_red.png) rgba(255,255,255,.8) no-repeat 95% 50%;
-  background-size:12px;
-}
-.fix-order-btn{
-  background-color:$color-red;
-  color:#ffffff;
-  font-size:$font-bigger;
-  font-weight:bold;
-  text-align:center;
-  padding:10px 0;
-  background:url(../images_new/icon/icon_order.png) $color-red no-repeat 15% 50%;
-  background-size:25px;
+.fix-order-frame{
+  width: 100%;
+  position: fixed;
+  bottom: 48px;
+
+  .fix-request-btn{
+    border: 1px solid $color-red;
+    color: $color-red;
+    text-align: center;
+    border-radius:20px;
+    font-size: $font-smallest;
+    padding:5px 0;
+    width:55%;
+    margin-left:auto;
+    background:url(../images_new/icon/icon_plus_red.png) rgba(255,255,255,.8) no-repeat 95% 50%;
+    background-size:12px;
+  }
+  .fix-order-btn{
+    margin-top: 5px;
+    background-color:$color-red;
+    color:#ffffff;
+    font-size:$font-bigger;
+    font-weight:bold;
+    text-align:center;
+    padding:10px 0;
+    background:url(../images_new/icon/icon_order.png) $color-red no-repeat 15% 50%;
+    background-size:25px;
+  }
 }
 
+
 .footer_frame{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,.8);
   .nav_list{
     width:100%;
     li{
@@ -273,6 +286,7 @@ input, button, textarea, select {
       padding:3px 0;
       p{
         font-size:6px;
+        text-align: center;
       }
     }
   }
