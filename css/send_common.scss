@@ -371,6 +371,15 @@ input, button, textarea, select {
   -webkit-border-radius: 20px;
 }
 
+.common-setting-button {
+  color: $color-lightest;
+  background-color: $color-red;
+  font-weight:bold;
+  text-align:center;
+  padding:1em 2em;
+  width: 100%;
+}
+
 .common-footer {
   position: fixed;
   bottom: 0;
@@ -423,6 +432,32 @@ input, button, textarea, select {
   margin-bottom: 0.5em;
 }
 
+.ml {
+  margin-left: 0.5em;
+}
+
+.mr {
+  margin-right: 0.5em;
+}
+
+.pt {
+  padding-top: 0.5em;
+}
+
+.pb {
+  padding-bottom: 0.5em;
+}
+
+.pl {
+  padding-left: 0.5em;
+}
+
+.pr {
+  padding-right: 0.5em;
+}
+
+
+
 .common-title-section {
     background-color: $color-lightest;
     width: 100%;
@@ -455,4 +490,30 @@ input, button, textarea, select {
 
 .light {
   color: $color-light;
+}
+
+.lighter {
+  color: $color-lighter;
+}
+
+.lightest {
+  color: $color-lightest;
+}
+
+/* 04_Status */
+//if this class added, checkmark
+span.checked:after {
+  content: '　';
+  background:url(../images_new/icon/icon_input_ok.png) no-repeat center;
+  //left: 0.5em;
+  position: relative;
+  background-size: 8px 9px;
+}
+
+span.no-checked:after {
+  content: '　';
+  background:url(../images_new/icon/icon_input_ng.png) no-repeat center;
+  //left: 0.5em;
+  position: relative;
+  background-size: 8px 9px;
 }
