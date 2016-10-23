@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   color: #545454;
   font-size: 14px; }
@@ -234,7 +235,7 @@ input, button, textarea, select {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: white; }
   .footer_frame .nav_list {
     width: 100%; }
     .footer_frame .nav_list li {
@@ -277,6 +278,14 @@ input, button, textarea, select {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px; }
 
+.common-setting-button {
+  color: #f7f7f7;
+  background-color: #e4504b;
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 2em;
+  width: 100%; }
+
 .common-footer {
   position: fixed;
   bottom: 0;
@@ -290,11 +299,11 @@ input, button, textarea, select {
 .common-tag {
   border: 1px solid #4ab091;
   color: #4ab091;
-  background-color: #f7f7f7;
-  font-weight: bold;
+  background-color: #ffffff;
   text-align: center;
   padding: 0.5em 2em;
-  border-radius: 8px; }
+  border-radius: 5px;
+  font-size: 10px; }
 
 /* 02_Common Layout */
 .center {
@@ -317,6 +326,24 @@ input, button, textarea, select {
 
 .mb {
   margin-bottom: 0.5em; }
+
+.ml {
+  margin-left: 0.5em; }
+
+.mr {
+  margin-right: 0.5em; }
+
+.pt {
+  padding-top: 0.5em; }
+
+.pb {
+  padding-bottom: 0.5em; }
+
+.pl {
+  padding-left: 0.5em; }
+
+.pr {
+  padding-right: 0.5em; }
 
 .common-title-section {
   background-color: #f7f7f7;
@@ -345,6 +372,25 @@ input, button, textarea, select {
 .light {
   color: #7a7a7a; }
 
+.lighter {
+  color: #bababa; }
+
+.lightest {
+  color: #f7f7f7; }
+
+/* 04_Status */
+span.checked:after {
+  content: '　';
+  background: url(../images_new/icon/icon_input_ok.png) no-repeat center;
+  position: relative;
+  background-size: 8px 9px; }
+
+span.no-checked:after {
+  content: '　';
+  background: url(../images_new/icon/icon_input_ng.png) no-repeat center;
+  position: relative;
+  background-size: 8px 9px; }
+
 .producer-serch-frame {
   background-color: #f7f7f7;
   padding: 10px 2%;
@@ -356,7 +402,8 @@ input, button, textarea, select {
     font-weight: bold;
     text-align: center;
     padding: 10px 0;
-    background-color: #4ab091; }
+    background-color: #4ab091;
+    margin-top: 10px; }
   .producer-serch-frame input {
     background-color: #ffffff;
     padding: 10px 0;
@@ -364,14 +411,80 @@ input, button, textarea, select {
     color: #7a7a7a;
     width: 100%;
     border-radius: 5px; }
+  .producer-serch-frame .mg-r {
+    margin-right: 4%; }
+  .producer-serch-frame .btn-select {
+    width: 48%;
+    position: relative;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    float: left;
+    margin-top: 10px; }
+    .producer-serch-frame .btn-select .label {
+      color: #bababa;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 12px; }
   .producer-serch-frame select {
+    margin-top: 5px;
     width: 48%;
     background-color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    color: #7a7a7a;
-    border-radius: 5px; }
-    .producer-serch-frame select:nth-child(1) {
-      margin-right: 4%; }
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 5px 0;
+    opacity: 0;
+    position: relative;
+    z-index: 2; }
 
-/*# sourceMappingURL=producer_list.css.map */
+.producer-list-frame {
+  padding: 10px 2%;
+  width: 96%; }
+  .producer-list-frame li {
+    border-bottom: 0.5px solid #f7f7f7; }
+    .producer-list-frame li .list-detail-l {
+      width: 20%;
+      float: left; }
+    .producer-list-frame li .list-detail-r {
+      width: 78%;
+      float: right;
+      padding-left: 2%; }
+      .producer-list-frame li .list-detail-r h2 {
+        font-weight: normal;
+        font-size: 14px;
+        margin-bottom: 5px; }
+      .producer-list-frame li .list-detail-r .pd-location {
+        font-size: 10px;
+        color: #bababa;
+        margin-top: 3px;
+        padding-left: 20px;
+        background: url(../images_new/icon/icon_location.png) no-repeat 0 50%;
+        background-size: 12px; }
+      .producer-list-frame li .list-detail-r .pd-detail-tag {
+        border: 1px solid #4ab091;
+        color: #4ab091;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 3px 10px;
+        border-radius: 5px;
+        font-size: 10px; }
+
+.pagelist {
+  width: 70%;
+  border: 0.5px solid #dcdcdc;
+  border-radius: 20px;
+  margin-left: 15%; }
+  .pagelist li {
+    width: 24%;
+    padding: 5px 0;
+    text-align: center;
+    float: left; }
+    .pagelist li:not(:last-child) {
+      border-right: 1px solid #dcdcdc; }
+    .pagelist li a {
+      color: #bababa; }
