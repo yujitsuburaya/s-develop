@@ -67,6 +67,9 @@
   width: 96%;
   li{
     border-bottom:0.5px solid $color-lightest;
+    a{
+      display:block;
+    }
     .list-detail-l{
       width: 20%;
       float: left;
