@@ -93,11 +93,11 @@
             <p class="pd-list-text cf">生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります</p>
           </a>
         </li>
-        <li>
+        <li data-id="1">
           <a href="product_detail.html">
             <p class="pd-image"><img src="images_new/S__sample.jpg" width="100%" alt="生産者" /></p>
             <div class="pd-detail-r">
-              <p class="reg-off"><img src="images_new/icon/icon_regist_on.png" width="100%" alt="生産者" /></p>
+              <p class="reg-off" onclick="cart(1)"><img src="images_new/icon/icon_regist_on.png" id="img-1" width="100%" alt="生産者" /></p>
               <p class="pd-name">商品名が入ります商品名が入ります</p>
               <p class="pd-location">徳島県</p>
               <p class="pd-company">農場・企業名が入ります</p>
@@ -138,4 +138,16 @@
     </section>
 
   </div>
+  <script type="text/javascript">
+    function cart(i) {
+      // リンクの遷移を止める。
+      $('a').click(function(){
+        return false;
+      });
+      var src = $('#img-' + i).attr('src');
+      $('#img-' + i).attr('src', 'images_new/icon/icon_regist_off.png');
+
+      // リンクの遷移を解除する      
+    }
+  </script>
 </body>
