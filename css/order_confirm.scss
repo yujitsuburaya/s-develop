@@ -3,6 +3,35 @@
 #sb-site{
   padding-bottom: 116px !important;
 }
+.order-date-frame{
+  padding: 10px 4%;
+  width: 92%;
+  .title{
+    font-size: $font-small;
+  }
+  input{
+    color: $color-light;
+    font-size: $font-bigger;
+    margin-bottom: 10px;
+    padding-left: 2%;
+    width: 100%;
+  }
+  select{
+    color: $color-light;
+    font-size: $font-bigger;
+    padding-left: 2%;
+    width: 100%;
+  }
+  //=====detail===//
+  tr{
+    font-size: $font-small;
+    td{
+      padding: 10px 2%;
+      width: 50%;
+    }
+  }
+}
+
 
 .price_frame{
   .order-detail-frame{

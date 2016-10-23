@@ -16,82 +16,134 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/order_confirm.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-  <div class="">
-    <div class="common-title-bar">
-      <h1>オーダー詳細</h1>
-    </div>
-    <dl>
-      <dt>配送希望日</dt>
-      <dd>2016年 10月 11日 (火)</dd>
-      <dt>配送希望時間帯</dt>
-      <dd>午前中 (9時～12時)</dd>
-    </dl>
-    <table>
-      <thead>
+
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
+
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+    <section class="common-title-section">
+      <h1>オーダー確認</h1>
+    </section>
+
+    <!-- <form action=""> -->
+    <table class="order-date-frame">
+      <tr>
+        <td>配送希望日</td>
+        <td>２０１６年１０月３１日</td>
+      </tr>
+      <tr>
+        <td>配送希望日</td>
+        <td>午前中</td>
+      </tr>
+    </table>
+    <div class="price_frame">
+      <table class="order-detail-frame">
         <tr>
           <th>食材</th>
           <th>数量</th>
           <th>単価</th>
           <th>合計</th>
         </tr>
-      </thead>
-      <tbody>
         <tr>
-          <td>
-            食材名が入ります。
-          </td>
-          <td>
-            1
-            <span>/1pc(100g)</span>
-          </td>
-          <td>
-            ￥75
-          </td>
-          <td>
-            ￥75
-          </td>
+          <td>食材名が入ります。</td>
+          <td class="pkg-frame"><p><span>1</span></p><p>/1pc(100g)</p></td>
+          <td>￥75</td>
+          <td>￥75</td>
         </tr>
         <tr>
-          <td>
-            食材名が入ります。
-          </td>
-          <td>
-            1
-            <span>/1pc(100g)</span>
-          </td>
-          <td>
-            ￥75
-          </td>
-          <td>
-            ￥75
-          </td>
+          <td>食材名が入ります。</td>
+          <td class="pkg-frame"><p><span>1</span></p><p>/1pc(100g)</p></td>
+          <td>￥75</td>
+          <td>￥75</td>
         </tr>
-      </tbody>
-    </table>
-    <dl>
-      <dt>小計</dt>
-      <dd>¥375</dd>
-      <dt>消費税</dt>
-      <dd>¥30</dd>
-    </dl>
-    <div>
-      合計
-      <strong>￥405</strong>
+        <tr>
+          <td>食材名が入ります。</td>
+          <td class="pkg-frame"><p><span>1</span></p><p>/1pc(100g)</p></td>
+          <td>￥75</td>
+          <td>￥75</td>
+        </tr>
+        <tr>
+          <td>食材名が入ります。</td>
+          <td class="pkg-frame"><p><span>1</span></p><p>/1pc(100g)</p></td>
+          <td>￥75</td>
+          <td>￥75</td>
+        </tr>
+      </table>
+      <table class="price_detail-frame">
+        <tr>
+          <td>小計</td>
+          <td>¥375</td>
+        </tr>
+        <tr>
+          <td>消費税</td>
+          <td>¥30</td>
+        </tr>
+        <tr>
+          <td>合計</td>
+          <td>¥405</td>
+        </tr>
+      </table>
+      <p class="remark_text">備考:備考テキストが入ります備考テキストが入ります備考テキストが入ります</p>
+
     </div>
-    <div>
-      備考
-      <p></p>
-    </div>
-    <dl>
+
+  <!-- </form> -->
+
+
+    <dl class="caution_text">
       <dt>配送に関する注意</dt>
       <dd>土日・祝日・休市日でも、365 日毎日休まずお届けします。</dd>
       <dd>配送ルートの都合で、ご希望のお時間より前後することがあります。</dd>
       <dd>天候や道路の混雑状況によって遅延する場合はご連絡申し上げます。</dd>
     </dl>
+
+  <!--=====footer=====-->
+    <section class="footer_frame">
+      <ul class="nav_list cf">
+        <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+        <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+        <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+        <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+        <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+      </ul>
+    </section>
+
+
   </div>
 </body>
