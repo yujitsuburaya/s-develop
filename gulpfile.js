@@ -11,7 +11,7 @@ gulp.task('sass', () => {
       }
     }))
     .pipe(sass())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('css'))
   ;
 });
 
