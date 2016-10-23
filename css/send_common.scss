@@ -332,10 +332,6 @@ input, button, textarea, select {
   }
 }
 
-
-
-
-
 /* 01_Common Parts */
 
 .common-primary-button {
@@ -372,12 +368,26 @@ input, button, textarea, select {
 }
 
 .common-setting-button {
-  color: $color-lightest;
   background-color: $color-red;
-  font-weight:bold;
-  text-align:center;
-  padding:1em 2em;
+  position: relative;
   width: 100%;
+  height: 40px;
+  text-align: center;
+  color: $color-lightest;
+  z-index: -10;
+}
+
+.common-setting-button:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid  #FFFFFF;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
 }
 
 .common-footer {

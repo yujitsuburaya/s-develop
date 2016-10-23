@@ -280,12 +280,36 @@ input, button, textarea, select {
   -webkit-border-radius: 20px; }
 
 .common-setting-button {
-  color: #f7f7f7;
-  background-color: #e4504b;
-  font-weight: bold;
-  text-align: center;
-  padding: 1em 2em;
-  width: 100%; }
+  position: relative;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  text-align: center; }
+
+.common-setting-button:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #ccc;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
+
+.common-setting-button:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid #fff;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
 
 .common-footer {
   position: fixed;
