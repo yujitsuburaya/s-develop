@@ -15,60 +15,93 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-<link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/request_add.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
   </div>
-
-  <section class="common-title-bar">
+  <div id="sb-site" class="main_content">
+  <!-- ヘッダー -->
+  <nav class="sb-slide common-top-nav">
+    <div class="nav-container-underlay">
+      <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+      <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+      <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+    </div>
+  </nav>
+  <section class="common-title-section">
     <h1>リクエスト追加</h1>
   </section>
   <main>
-  <section>
-    <h2>探している食材は？</h2>
-  </section>
-  <section>
-    <h2>欲しい時期は？</h2>
-  </section>
-  <section>
-    <h2>価格</h2>
-  </section>
-  <section>
-    <h2>画像</h2>
-  </section>
-  <section>
-    <h2>備考</h2>
-    <input type="text" name="name" value="" placeholder="詳細記入欄">
-  </section>
-
-  リクエスト内容を運営事務局に送ります。
-  リクエストを送る(ボタン)
+    <form class="" action="index.html" method="post">
+      <section class="mt">
+        <h2><span class="tags smallest">探している食材は？</span></h2>
+        <p>
+          <input type="text" class="request-input" name="name" value="" placeholder="食材を入力してください">
+        </p>
+        <p>
+          <input type="text" name="name" value="" placeholder="カテゴリ">
+          <input type="text" name="name" value="" placeholder="サブカテゴリ">
+        </p>
+      </section>
+      <section class="mt">
+        <h2><span class="tags smallest">欲しい時期は？</span></h2>
+        <p class="smallest">
+          <input class="width-small" type="text" name="name" value="">月 <input class="width-small" type="text" name="name" value="">日 から <input class="width-small" type="text" name="name" value=""> 月 <input class="width-small" type="text" name="name" value=""> 日
+        </p>
+      </section>
+      <section>
+        <h2><span class="tags smallest">価格</span></h2>
+        <p class="small"><input type="text" name="name" value="" placeholder=""> 円 / 単位まで</p>
+      </section>
+      <section>
+        <h2><span class="tags smallest">画像</span></h2>
+        <button class="file-input">ファイルを選択してください</button>
+      </section>
+      <section>
+        <h2><span class="tags smallest">備考</span></h2>
+        <input class="detail" type="text" name="name" value="" placeholder="">
+      </section>
+      <section class="center">
+        <p class="notification">リクエスト内容を運営事務局に送ります。</p>
+        <button class="common-primary-button" type="button" name="button">リクエストを送る</button>
+      </section>
+    </form>
+    <!--=====footer=====-->
+    <section class="footer_frame">
+      <ul class="nav_list cf">
+        <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+        <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+        <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+        <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+        <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+      </ul>
+    </section>
   </main>
-  <footer>
-    いろいろアイコンがあるやつ
-
-  </footer>
-
-
-  </main>
-
 </div>
-<script type="text/javascript">
-  function counter(i) {
-    var pre_count = Number($('#count_value').val());
-    var count = pre_count + Number(i);
-    if (count < 0) {
-      count = 0;
-    }
-    $('#count_value').val(count);
-    $('#count_value_text').text(count);
-  }
-</script>
 </body>
