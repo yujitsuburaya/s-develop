@@ -61,43 +61,81 @@
     </section>
     <div class="producer-serch-frame">
       <p class="serch-producer-name"><input type="text" name="searchName" placeholder="生産者または農園名"></p>
-      <select name="prefecture_name" id="prefecture_name">
-        <option value="">都道府県</option>
-        <option value="">北海道</option>
-        <option value="">青森</option>
-        <option value="">岩手</option>
-      </select>
-      <select name="producer_category_id" id="producer_category_id" class="form-control">
-        <option value="">カテゴリーを指定</option>
-        <option value="1">農業</option>
-        <option value="2">畜産業</option>
-        <option value="3">水産業</option>
-        <option value="4">食品製造・加工業</option>
-        <option value="5">飲料・酒造</option>
-        <option value="6">その他</option>
-      </select>
+
+      <div class="btn-select mg-r">
+        <p class="label">都道府県</p>
+        <select name="prefecture_name" id="prefecture_name">
+          <option value="">北海道</option>
+          <option value="">青森</option>
+          <option value="">岩手</option>
+        </select>
+      </div>
+
+      <div class="btn-select">
+        <p class="label">カテゴリーを指定</p>
+        <select name="producer_category_id" id="producer_category_id" class="form-control">
+          <option value="1">農業</option>
+          <option value="2">畜産業</option>
+          <option value="3">水産業</option>
+          <option value="4">食品製造・加工業</option>
+          <option value="5">飲料・酒造</option>
+          <option value="6">その他</option>
+        </select>
+      </div>
+
       <button class="serach-btn cf">生産者を検索する</button>
     </div>
 
     <ul class="producer-list-frame">
-      <li>
-        <figure>
-          <img src="" alt="" width="100%"/>
+      <li class="cf">
+        <figure class="list-detail-l">
+          <img src="images_new/S__sample.jpg" alt="" width="100%"/>
         </figure>
-        <section class="">
+        <section class="list-detail-r">
           <h2>ベリーファームコモト</h2>
-          <span class="common-prefecture">徳島県</span>
-          <span class="common-tag">農業</span>
+          <span class="pd-location">徳島県</span>
+          <span class="pd-detail-tag">農業</span>
+        </section>
+      </li>
+      <li class="cf">
+        <figure class="list-detail-l">
+          <img src="images_new/S__sample.jpg" alt="" width="100%"/>
+        </figure>
+        <section class="list-detail-r">
+          <h2>ベリーファームコモト</h2>
+          <span class="pd-location">徳島県</span>
+          <span class="pd-detail-tag">農業</span>
+        </section>
+      </li>
+      <li class="cf">
+        <figure class="list-detail-l">
+          <img src="images_new/S__sample.jpg" alt="" width="100%"/>
+        </figure>
+        <section class="list-detail-r">
+          <h2>ベリーファームコモト</h2>
+          <span class="pd-location">徳島県</span>
+          <span class="pd-detail-tag">農業</span>
         </section>
       </li>
     </ul>
 
-
-    <ul>
-      <li>1</li>
-      <li>2</li>
-      <li>次</li>
-      <li>最後</li>
+    <ul class="pagelist cf">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">次</a></li>
+      <li><a href="">最後</a></li>
     </ul>
+
+    <!--=====footer=====-->
+      <section class="footer_frame">
+        <ul class="nav_list cf">
+          <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+          <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+          <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+          <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+          <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+        </ul>
+      </section>
+
   </div>
 </body>

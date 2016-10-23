@@ -23,16 +23,42 @@
     border-radius: 5px;
 
   }
+  .mg-r{
+    margin-right:4%;
+  }
+  .btn-select{
+    width: 48%;
+    // margin: 10px auto;
+    position: relative;
+    background: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    float:left;
+    margin-top:10px;
+
+    .label {
+      color: $color-lighter;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+      text-align:center;
+      padding:10px 0;
+      font-size:$font-small;
+
+    }
+  }
   select{
+    margin-top:5px;
     width: 48%;
     background-color: #ffffff;
-    padding: 10px 0;
-    text-align: center;
-    color: $color-light;
-    border-radius: 5px;
-    &:nth-child(1){
-      margin-right: 8%;
-    }
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding:5px 0;
+    opacity: 0;
+    position: relative;
+    z-index: 2;
   }
 
 }
@@ -40,13 +66,59 @@
   padding: 10px 2%;
   width: 96%;
   li{
-    figure{
-
+    border-bottom:0.5px solid $color-lightest;
+    .list-detail-l{
+      width: 20%;
+      float: left;
     }
-    section{
-
+    .list-detail-r{
+      width: 78%;
+      float: right;
+      padding-left: 2%;
+      h2{
+        font-weight:normal;
+        font-size:$font-normal;
+        margin-bottom:5px;
+      }
+      .pd-location{
+        font-size: $font-smallest;
+        color: $color-lighter;
+        margin-top:3px;
+        padding-left:20px;
+        background:url(../images_new/icon/icon_location.png) no-repeat 0 50%;
+        background-size:12px;
+      }
+      .pd-detail-tag{
+        border: 1px solid $color-green;
+        color: $color-green;
+        background-color: #ffffff;
+        text-align:center;
+        padding:3px 10px;
+        border-radius: 5px;
+        font-size:$font-smallest;
+      }
     }
 
+  }
+}
+
+.pagelist{
+  width:70%;
+  // margin:10px auto;
+  border:0.5px solid #dcdcdc;
+  border-radius:20px;
+  margin-left:15%;
+  li{
+    width:24%;
+    padding:5px 0;
+    text-align:center;
+    float:left;
+    &:not(:last-child){
+      border-right:1px solid #dcdcdc;
+    }
+    a{
+      color:$color-lighter;
+    }
   }
 
 }
