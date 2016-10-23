@@ -16,66 +16,111 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/request_info.css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
+
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
   </div>
 
-  <section class="common-title-bar">
-    <h1>リクエスト一詳細</h1>
+  <div id="sb-site" class="main_content">
+  <!-- ヘッダー -->
+  <nav class="sb-slide common-top-nav">
+    <div class="nav-container-underlay">
+      <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+      <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+      <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+    </div>
+  </nav>
+
+  <section class="common-title-section">
+    <h1>リクエスト詳細</h1>
   </section>
   <main>
-
-    <table>
-      <tr>
-        <th>ID</th>
-        <td>123</td>
-      </tr>
-      <tr>
-        <th>カテゴリ/サブカテゴリ</th>
-        <td>野菜</td>
-      </tr>
-      <tr>
-        <th>食材</th>
-        <td>小松菜</td>
-      </tr>
-      <tr>
-        <th>希望価格</th>
-        <td>1円</td>
-      </tr>
-      <tr>
-        <th>画像</th>
-        <td>画像</td>
-      </tr>
-    </table>
-    <section>
-      メモ内容が入ります。
-    </section>
+    <ul>
+      <li class="under-bar pt pb">
+        <div class="part-left">
+          <span class="small pl">ID</span>
+        </div>
+        <div class="part-right">
+          <span class="small pl">123</span>
+        </div>
+      </li>
+      <li class="under-bar pt pb">
+        <div class="part-left">
+          <span class="small pl">カテゴリ/サブカテゴリ</span>
+        </div>
+        <div class="part-right">
+          <span class="small pl">野菜</span>
+        </div>
+      </li>
+      <li class="under-bar pt pb">
+        <div class="part-left">
+          <span class="small pl">食材</span>
+        </div>
+        <div class="part-right">
+          <span class="small pl">小松菜</span>
+        </div>
+      </li>
+      <li class="under-bar pt pb">
+        <div class="part-left">
+          <span class="small pl">欲しい時期</span>
+        </div>
+        <div class="part-right">
+          <span class="small pl">１月中旬～3月上旬</span>
+        </div>
+      </li>
+      <li class="pt pb">
+        <div class="part-left">
+          <span class="small pl">画像</span>
+        </div>
+        <div class="part-right">
+          <span class="small pl">
+            <p>
+              <img src="./images_new/S__sample.jpg" alt="" width="80%"/>
+            </p>
+          </span>
+        </div>
+      </li>
+      <li class="under-bar pt pb memo small pl mr ml">
+        <span>メモ内容が<br>入ります。</span>
+      </li>
+    </ul>
   </main>
-  <footer>
-    いろいろアイコンがあるやつ
-
-  </footer>
-
-
-  </main>
-
+  <!--=====footer=====-->
+  <section class="footer_frame">
+    <ul class="nav_list cf">
+      <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+      <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+      <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+      <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+      <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+    </ul>
+  </section>
 </div>
-<script type="text/javascript">
-  function counter(i) {
-    var pre_count = Number($('#count_value').val());
-    var count = pre_count + Number(i);
-    if (count < 0) {
-      count = 0;
-    }
-    $('#count_value').val(count);
-    $('#count_value_text').text(count);
-  }
-</script>
 </body>
