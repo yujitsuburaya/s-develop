@@ -278,13 +278,37 @@ input, button, textarea, select {
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px; }
 
-.common-setting-button {
-  color: #f7f7f7;
-  background-color: #e4504b;
+.common-forth-button {
+  color: #e4504b;
+  background-color: #FFFFFF;
   font-weight: bold;
   text-align: center;
   padding: 1em 2em;
-  width: 100%; }
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: 1px solid #e4504b; }
+
+.common-setting-button {
+  background-color: #e4504b;
+  position: relative;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #f7f7f7;
+  z-index: -10; }
+
+.common-setting-button:before {
+  content: "";
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid  #FFFFFF;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
 
 .common-footer {
   position: fixed;
@@ -349,9 +373,10 @@ input, button, textarea, select {
   background-color: #f7f7f7;
   width: 100%;
   text-align: center;
-  padding: 0.5em 0;
-  border-top: 1px solid #7a7a7a;
-  margin: 0 0 0.5em 0; }
+  padding: 0.5em 0; }
+  .common-title-section h1 {
+    font-size: 14px;
+    font-weight: normal; }
 
 /* 03_Common Font */
 .smallest {
@@ -372,9 +397,6 @@ input, button, textarea, select {
 .light {
   color: #7a7a7a; }
 
-<<<<<<< HEAD
-/*# sourceMappingURL=send_common.css.map */
-=======
 .lighter {
   color: #bababa; }
 
@@ -393,4 +415,21 @@ span.no-checked:after {
   background: url(../images_new/icon/icon_input_ng.png) no-repeat center;
   position: relative;
   background-size: 8px 9px; }
->>>>>>> ea88f738fd0fed69b8bef3627fbf43704c5196a6
+
+/* 05_List */
+.list-next-arrow:after {
+  position: absolute;
+  margin-left: 90%;
+  margin-top: -6%;
+  content: "";
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #7a7a7a;
+  border-right: 3px solid #7a7a7a;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+/* 06_Account Form */
+.info-lavel {
+  background-color: #f7f7f7; }

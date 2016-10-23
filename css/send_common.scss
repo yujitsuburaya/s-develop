@@ -486,8 +486,10 @@ input, button, textarea, select {
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
-    border-top: 1px solid $color-light;
-    margin: 0 0 0.5em 0;
+    h1{
+      font-size: $font-normal;
+      font-weight: normal;    
+    }
 }
 
 /* 03_Common Font */
