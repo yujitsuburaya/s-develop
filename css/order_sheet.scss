@@ -46,6 +46,15 @@ ul{
   .counter-plus {
     float: right;
   }
+
+  input {
+    color: $color-light;
+    font-weight:bold;
+    text-align:center;
+    border-color: $color-light;
+    border-radius: 8px;
+  }
+
   .counter-num {
     font-size: $font-biggest;
   }
