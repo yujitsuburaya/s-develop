@@ -17,30 +17,82 @@
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
 <link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/producer_list.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-  <div class="">
-    <div class="common-title-bar">
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
+
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+    <section class="common-title-section">
       <h1>生産者からさがす</h1>
-      <input type="text" name="searchName" placeholder="生産者または農園名">
-      <select>都道府県</select>
-      <select>カテゴリー</select>
-      <button>生産者を検索する</button>
+    </section>
+    <div class="producer-serch-frame">
+      <p class="serch-producer-name"><input type="text" name="searchName" placeholder="生産者または農園名"></p>
+      <select name="prefecture_name" id="prefecture_name">
+        <option value="">都道府県</option>
+        <option value="">北海道</option>
+        <option value="">青森</option>
+        <option value="">岩手</option>
+      </select>
+      <select name="producer_category_id" id="producer_category_id" class="form-control">
+        <option value="">カテゴリーを指定</option>
+        <option value="1">農業</option>
+        <option value="2">畜産業</option>
+        <option value="3">水産業</option>
+        <option value="4">食品製造・加工業</option>
+        <option value="5">飲料・酒造</option>
+        <option value="6">その他</option>
+      </select>
+      <button class="serach-btn cf">生産者を検索する</button>
     </div>
-    <ul>
+
+    <ul class="producer-list-frame">
       <li>
         <figure>
-          <img src="" alt="">
+          <img src="" alt="" width="100%"/>
         </figure>
-        <section>
+        <section class="">
           <h2>ベリーファームコモト</h2>
           <span class="common-prefecture">徳島県</span>
           <span class="common-tag">農業</span>
         </section>
       </li>
     </ul>
+
+
     <ul>
       <li>1</li>
       <li>2</li>

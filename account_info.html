@@ -15,49 +15,87 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
-<link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/account_info.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/account_info.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_chat.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
-  </div>
 
-  <section class="common-title-bar">
-    <h1>アカウント情報変更</h1>
-  </section>
-
-  <div>
-    いい感じの画像
-  </div>
-
-  <main>
-    <ul>
-      <li class="">メールアドレス</li>
-        <input type="text" name="" value="nishio@nishio.nishio">
-      <li>店舗名 / 事業者名</li>
-        <input type="text" name="" value="浜田山総本山">
-      <li>担当者名</li>
-        <input type="text" name="" value="かまち" placeholder="性">
-        <input type="text" name="" value="" placeholder="名">
-      <li>購入者カテゴリ</li>
-        <input type="text" name="" value="" placeholder="レストラン">
-      <li>電話番号<span>ハイフンなしで入力してください</span></li>
-        <input type="text" name="" value="000-0000-0000" placeholder="">
-      <li>FAX</li>
-        <input type="text" name="" value="000-0000-0000" placeholder="">
-      <li>住所</li>
-        <input type="text" name="" value="000-0000-0000" placeholder="郵便番号(ハイフンなし)">
-        <input type="text" name="" value="000-0000-0000" placeholder="都道府県">
-        <input type="text" name="" value="000-0000-0000" placeholder="市・区">
-        <input type="text" name="" value="000-0000-0000" placeholder="町村">
-        <input type="text" name="" value="000-0000-0000" placeholder="その他">
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
     </ul>
-  </main>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
 
-</div>
+
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+
+    <section class="common-title-section">
+      <h1>アカウント情報変更</h1>
+    </section>
+
+    <div>
+      <img src="./images_new/S__sample.jpg" alt="[TODO]サンプル画像"  width="100%"/>
+    </div>
+
+    <main>
+      <ul>
+        <li class="info-lavel pl pt pb no-checked">
+          <span class="checked">メールアドレス</span>
+        </li>
+          <input class="pl pt pb" type="text" name="" value="nishio@nishio.nishio">
+        <li class="info-lavel pl pt pb"><span class="no-checked">店舗名 / 事業者名</span></li>
+          <input class="pl pt pb" type="text" name="" value="浜田山総本山">
+        <li class="info-lavel pl pt pb"><span class="">担当者名</span></li>
+          <input class="pl pt pb" type="text" name="" value="かまち" placeholder="性">
+          <input class="pl pt pb" type="text" name="" value="" placeholder="名">
+        <li class="info-lavel pl pt pb"><span class="">購入者カテゴリ</span></li>
+          <input class="pl pt pb" type="text" name="" value="" placeholder="レストラン">
+        <li class="info-lavel pl pt pb"><span class="pr">電話番号</span><span class="no-checked smallest lighter mr">ハイフンなしで入力してください</span></li>
+          <input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="">
+        <li class="info-lavel pl pt pb"><span class="pr">FAX</span><span class="smallest lighter">ハイフンなしで入力してください</span></li>
+          <input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="">
+        <li class="info-lavel pl pt pb"><span class="no-checked">住所</span></li>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="郵便番号(ハイフンなし)"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="都道府県"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="市・区"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="町村"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="その他"></p>
+      </ul>
+    </main>
+
+    <p class=" pl smallest lighter"><span class="no-checked"></span> 必須入力項目です</p>
+  </div>
+
+  <button class="cf common-setting-button">
+    更新する
+  </button>
 </body>
