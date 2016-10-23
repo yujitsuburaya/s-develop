@@ -1,0 +1,119 @@
+@import "send_common.scss";
+
+#sb-site{
+  padding-bottom: 116px !important;
+}
+
+.price_frame{
+  .order-detail-frame{
+    border-bottom: 0.5px solid $color-lightest;
+    width: 100%;
+    tr{
+      &:nth-child(1){
+        th{
+          font-size: 10px;
+          background-color: #dcdcdc;
+          padding: 5px 0;
+
+          &:first-child{
+            width: 40%;
+          }
+          &:not(:first-child){
+            width: 20%;
+          }
+        }
+      }
+      &:not(:first-child){
+        border-bottom: 0.5px solid $color-lightest;
+        .pkg-frame{
+          p:first-child span{
+            border: 1px solid $color-green;
+            border-radius: 5px;
+            padding: 3px;
+            color: $color-green;
+            font-weight: bold;
+          }
+          p:nth-child(2){
+            font-size: 5px;
+            margin-top:3px;
+          }
+        }
+        td{
+          font-size: 10px;
+          background-color: #ffffff;
+          padding: 8px 0;
+          text-align: center;
+
+          &:first-child{
+            width: 40%;
+          }
+          &:not(:first-child){
+            width: 20%;
+          }
+          &:nth-child(3){
+            font-size: 16px;
+          }
+          &:nth-child(4){
+            font-size: 16px;
+
+          }
+        }
+
+      }
+
+    }
+  }
+}
+.price_detail-frame{
+  width: 100%;
+  tr{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    &:nth-child(3){
+      font-weight: bold;
+      font-size: 12px;
+      border-top: 0.5px solid $color-lightest;
+    }
+    td{
+      padding: 10px 0;
+    }
+  }
+
+}
+.total_price_text{
+  text-align: center;
+  color: $color-red;
+  font-size: $font-normal;
+  padding: 5px 0;
+  background-color: #ffffff;
+}
+.fix-order-confirm-btn{
+  background-color:$color-red;
+  color:#ffffff;
+  font-size:$font-bigger;
+  font-weight:bold;
+  text-align:center;
+  padding:10px 0;
+  // background:url(../images_new/icon/icon_order.png) $color-red no-repeat 15% 50%;
+  background-size:25px;
+  background-color: $color-red;
+}
+
+.remark_text{
+  padding: 10px 2%;
+  color:#dcdcdc;
+}
+
+
+.caution_text{
+  padding: 10px 2%;
+  color: $color-light;
+  dt{
+    font-size: $font-small;
+    margin-bottom: 10px;
+  }
+  dd{
+    font-size: $font-smallest;
+  }
+}
