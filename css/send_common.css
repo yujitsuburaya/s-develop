@@ -234,7 +234,7 @@ input, button, textarea, select {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8); }
+  background-color: white; }
   .footer_frame .nav_list {
     width: 100%; }
     .footer_frame .nav_list li {
@@ -344,3 +344,5 @@ input, button, textarea, select {
 
 .light {
   color: #7a7a7a; }
+
+/*# sourceMappingURL=send_common.css.map */
