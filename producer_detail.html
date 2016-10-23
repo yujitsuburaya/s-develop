@@ -16,49 +16,126 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/producer_detail.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-  <div class="">
-    <section>
-      <h1 class="common-none">生産者詳細</h1>
-      <section>
-        <figure>
-          <img src="" alt="">
-        </figure>
-        <div>
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
+
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+    <h1 class="common-none">生産者詳細</h1>
+
+    <section class="pd-detail-frame">
+      <div class="pd-detail-img-frame">
+        <p><img src="images_new/icon/icon_noimage_product.png" alt="" width="100%"></p>
+        <div class="pd-detail-contain">
           <h2>ベリーファームコモト</h2>
           <span>農業</span>
           <span>徳島県</span>
           <aside>主要生産物：在来里芋「甚五右ヱ門芋」（じんごえもんいも）</aside>
         </div>
-        <p>
-          私たちの住む山形県真室川町の大沢地区は、北に出羽富士鳥海山を望み、南に月山を望む里山で電線や下水などが一切通ってない森の中にある広い農地にあります。 この自然豊かな里で山菜や米・里芋などを丹精こめて作り続けてきました。
-        </p>
-      </section>
-      <section>
-        <h2>この生産者の食材一覧</h2>
-        <ul>
-          <figure>
-            <img src="" alt="">
-          </figure>
-          <h3>赤軸水菜 (100g 入 )</h3>
-          <span>徳島県</span>
-          <span>徳島有機ファーム</span>
-          <span>9 月下旬～11 月上旬</span>
-          <span>
-            <strong>￥150</strong>/袋
-          </span>
-          <p>
-            発色の良い赤軸水菜となります。土づくりにこだわり、新鮮で美味しいものとなっています。シャキシャキとした食感なのでサラダなどにもオススメです。
-          </p>
-          <figure>
-            <img src="" alt="">
-          </figure>
-        </ul>
-      </section>
-    </seciton>
+      </div>
+      <p class="pd-detail-text">
+        私たちの住む山形県真室川町の大沢地区は、北に出羽富士鳥海山を望み、南に月山を望む里山で電線や下水などが一切通ってない森の中にある広い農地にあります。
+        この自然豊かな里で山菜や米・里芋などを丹精こめて作り続けてきました。
+      </p>
+    </section>
+
+
+      <p class="pd-detail-list-title">この生産者の食材一覧</p>
+
+      <ul class="pd-detail-producer-list">
+
+        <li>
+          <a href="product_detail.html">
+            <p class="pd-image"><img src="images_new/S__sample.jpg" width="100%" alt="生産者" /></p>
+            <div class="pd-detail-r">
+              <p class="reg-off"><img src="images_new/icon/icon_regist_off.png" width="100%" alt="生産者" /></p>
+              <p class="pd-name">商品名が入ります商品名が入ります</p>
+              <p class="pd-location">徳島県</p>
+              <p class="pd-company">農場・企業名が入ります</p>
+              <p class="pd-detail-tag">出荷時期が入ります</p>
+              <p class="pd-price">値段が入ります</p>
+            </div>
+            <p class="pd-list-text cf">生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります</p>
+          </a>
+        </li>
+        <li>
+          <a href="product_detail.html">
+            <p class="pd-image"><img src="images_new/S__sample.jpg" width="100%" alt="生産者" /></p>
+            <div class="pd-detail-r">
+              <p class="reg-off"><img src="images_new/icon/icon_regist_on.png" width="100%" alt="生産者" /></p>
+              <p class="pd-name">商品名が入ります商品名が入ります</p>
+              <p class="pd-location">徳島県</p>
+              <p class="pd-company">農場・企業名が入ります</p>
+              <p class="pd-detail-tag">出荷時期が入ります</p>
+              <p class="pd-price">値段が入ります</p>
+            </div>
+            <p class="pd-list-text cf">生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります</p>
+          </a>
+        </li>
+        <li>
+          <a href="product_detail.html">
+            <p class="pd-image"><img src="images_new/S__sample.jpg" width="100%" alt="生産者" /></p>
+            <div class="pd-detail-r">
+              <p class="reg-off"><img src="images_new/icon/icon_regist_on.png" width="100%" alt="生産者" /></p>
+              <p class="pd-name">商品名が入ります商品名が入ります</p>
+              <p class="pd-location">徳島県</p>
+              <p class="pd-company">農場・企業名が入ります</p>
+              <p class="pd-detail-tag">出荷時期が入ります</p>
+              <p class="pd-price">値段が入ります</p>
+            </div>
+            <p class="pd-list-text cf">生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります生産者の説明が入ります</p>
+          </a>
+        </li>
+
+    </ul>
+
+
+
+    <!--=====footer=====-->
+    <section class="footer_frame">
+      <ul class="nav_list cf">
+        <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+        <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+        <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+        <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+        <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+      </ul>
+    </section>
+
   </div>
 </body>
