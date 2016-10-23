@@ -5,5 +5,4 @@ function counter(i) {
     count = 0;
   }
   $('#count_value').val(count);
-  $('#count_value_text').text(count);
 }
