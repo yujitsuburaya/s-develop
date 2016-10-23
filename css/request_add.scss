@@ -1,0 +1,48 @@
+@import "reset.css";
+@import "send_common.scss";
+
+
+section {
+  margin: 1em 1em;
+}
+
+h2{
+}
+
+input {
+  margin: 0.5em;
+  border-bottom: 1px solid $color-lightest;
+}
+
+.tags{
+  color: #FFFFFF;
+  background-color: $color-lighter;
+  font-weight: normal;
+  padding: 0.5em;
+  border-radius:20px;
+  padding: 0.5em 2em;
+}
+
+.width-small {
+  width: 3em;
+}
+
+.file-input {
+  margin: 1em 0 0 3em;
+  padding: 0.5em 0.5em;
+  color: $color-lighter;
+  background-color: $color-lightest;
+}
+
+.detail {
+  background-color: $color-lightest;
+  width: 90%;
+  height: 5em;
+  margin: 1em;
+}
+
+.notification {
+  font-size: $font-smallest;
+  color: $color-lighter;
+  margin-bottom: 1em;
+}
