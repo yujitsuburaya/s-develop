@@ -1,0 +1,22 @@
+@import "reset.css";
+@import "send_common.scss";
+
+li {
+  display: flex;
+}
+
+.under-bar {
+  border-bottom: $list-under-bar;
+}
+
+.part-left {
+  width: 50%;
+}
+
+.part-right {
+  width: 50%;
+}
+
+.memo {
+  background-color: $color-lightest;
+}
