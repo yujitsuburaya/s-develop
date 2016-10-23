@@ -528,3 +528,20 @@ span.no-checked:after {
   position: relative;
   background-size: 8px 9px;
 }
+
+/* 05_List */
+.list-next-arrow {
+  &:after {
+    position: absolute;
+    margin-left: 90%;
+    margin-top: -6%;
+    content: "";
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid $color-light;
+    border-right: 3px solid $color-light;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
