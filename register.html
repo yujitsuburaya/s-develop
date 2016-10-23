@@ -16,63 +16,58 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/register.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
 </head>
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav register-title">
+      <div class="nav-container-underlay">
+        <h1 class="title-text">会員登録</h1>
+      </div>
+    </nav>
+    <p class="pl smallest lighter register-caption"><span class="no-checked"></span> 必須入力項目です</p>
+    <main>
+      <ul>
+        <li>
+          <div class="info-lavel pl pt pb no-checked">
+            <span id="email-caption" class="checked">メールアドレス</span>
+          </div>
+          <input class="pl pt pb" type="text" name="" value="nishio@nishio.nishio" onload="validation(email)">
+        </li>
+        <li class="info-lavel pl pt pb">
+          <span class="no-checked">店舗名 / 事業者名</span>
+          <input class="pl pt pb" type="text" name="" value="浜田山総本山">
+        </li>
+        <li class="info-lavel pl pt pb"><span class="">担当者名</span></li>
+          <input class="pl pt pb" type="text" name="" value="かまち" placeholder="性">
+          <input class="pl pt pb" type="text" name="" value="" placeholder="名">
+        <li class="info-lavel pl pt pb"><span class="">購入者カテゴリ</span></li>
+          <input class="pl pt pb" type="text" name="" value="" placeholder="レストラン">
+        <li class="info-lavel pl pt pb"><span class="pr">電話番号</span><span class="no-checked smallest lighter mr">ハイフンなしで入力してください</span></li>
+          <input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="">
+        <li class="info-lavel pl pt pb"><span class="pr">FAX</span><span class="smallest lighter">ハイフンなしで入力してください</span></li>
+          <input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="">
+        <li class="info-lavel pl pt pb"><span class="no-checked">住所</span></li>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="郵便番号(ハイフンなし)"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="都道府県"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="市・区"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="町村"></p>
+          <p><input class="pl pt pb" type="text" name="" value="000-0000-0000" placeholder="その他"></p>
+      </ul>
+    </main>
+    <button class="cf common-setting-button">
+      <span class="bigger">確認する</span>
+    </button>
   </div>
-
-  <section class="common-title-bar">
-    <h1>会員登録</h1>
-  </section>
-  <main>
-    <span>必須入力項目です</span>
-  <section>
-    <h2>店舗名 / 事業者名</h2>
-    <p>浜田山総本山</p>
-  </section>
-  <section>
-    <h2>購入者カテゴリ</h2>
-    <p>レストラン/ホテル/バル</p>
-  </section>
-  <section>
-    <h2>担当者名</h2>
-    <input type="text" name="name" value="" placeholder="性">
-    <input type="text" name="name" value="" placeholder="名">
-  </section>
-  <section>
-    <h2>メールアドレス</h2>
-    <p>kamachi@kamacheeez.co.jp</p>
-  </section>
-  <section>
-    <h2>電話番号(ハイフンなしで入力してください)</h2>
-    <input type="text" name="name" value="" placeholder="">
-  </section>
-  <section>
-    <h2>パスワード</h2>
-    <input type="password" name="name" value="" placeholder="">
-  </section>
-  <section>
-    <h2>パスワード確認</h2>
-    <input type="password" name="name" value="" placeholder="">
-  </section>
-  <section>
-    <h2>住所</h2>
-    <input type="text" name="name" value="" placeholder="郵便番号">
-    <input type="password" name="name" value="" placeholder="都道府県(必須)">
-    <input type="password" name="name" value="" placeholder="市・区(必須)">
-    <input type="password" name="name" value="" placeholder="町村(必須)">
-    <input type="password" name="name" value="" placeholder="その他住所">
-  </section>
-
-  <p>必須項目を入力してください</p>
-  <p>確認</p>
-  </main>
-
-</div>
+  <script type="text/javascript">
+    function validation(type) {
+      var value = $('#' + type + '-input').val();
+      if (value) {
+        $('#' + type + '-caption').attr('class', 'checked');
+      } else {
+        $('#' + type + '-caption').attr('class', 'no-checked');
+      }
+    }
+  </script>
 </body>

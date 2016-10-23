@@ -1,0 +1,13 @@
+@import "send_common.scss";
+
+.register-title {
+  border-bottom: $list-under-bar;
+
+  .title-text {
+    text-align: center;
+    margin-top: 7px;
+  }
+}
+.register-caption {
+  margin-top: 10px;
+}
