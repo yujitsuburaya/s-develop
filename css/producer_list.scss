@@ -1,5 +1,5 @@
 @charset "utf-8";
-@import "send_common";
+@import "send_common.scss";
 .producer-serch-frame{
   background-color: $color-lightest;
   padding: 10px 2%;
@@ -12,6 +12,7 @@
     text-align:center;
     padding:10px 0;
     background-color: $color-green;
+    margin-top: 10px;
   }
   input{
     background-color: #ffffff;
@@ -32,6 +33,20 @@
     &:nth-child(1){
       margin-right: 8%;
     }
+  }
+
+}
+.producer-list-frame{
+  padding: 10px 2%;
+  width: 96%;
+  li{
+    figure{
+
+    }
+    section{
+
+    }
+
   }
 
 }
