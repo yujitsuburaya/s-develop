@@ -1,0 +1,65 @@
+@import "reset.css";
+@import "send_common.scss";
+
+.request-background {
+  background-image: url(../images_new/chat_bg_image.png);
+  height: 800px;
+}
+
+.common-title-section {
+  margin: 0;
+}
+
+.request-none {
+  margin-top: 5em;
+}
+
+.request-list-none-comment {
+  padding-top: 5em;
+}
+
+.add-button {
+  margin-top: 5em;
+}
+
+.request-table {
+  width: 100%;
+}
+
+.table-header {
+  background-color: $color-lightest;
+  font-weight: normal;
+}
+
+ul{
+  width: 100%;
+}
+
+li {
+  display: flex;
+  border-bottom: $list-under-bar;
+}
+
+.part-left {
+  width: 30%;
+}
+
+.part-center {
+  width: 30%;
+}
+
+.part-right {
+  width: 40%;
+}
+
+.list-header > div {
+  background-color: $color-lightest;
+}
+
+.button-section {
+  margin-bottom: 1em;
+}
+
+div#sb-site {
+    margin-bottom: 48px;
+}

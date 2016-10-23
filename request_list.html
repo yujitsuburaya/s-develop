@@ -17,56 +17,131 @@
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
 <link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="../css/ordersheet.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/request_list.css" />
+<link href="css/slidebars.css" type="text/css" rel="stylesheet">
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
+
 <body id="">
-<div>
-  <!-- ヘッダー -->
-  <div class="">
-    共通ヘッダー
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
   </div>
 
-  <section class="common-title-bar">
-    <h1>リクエスト詳細</h1>
-  </section>
+  <div id="sb-site" class="main_content">
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
 
-  <main>
-    大きいボタン配置 あとで共有CSS書く
-  </main>
-  <main>
+    <section class="common-title-section">
+      <h1>リクエスト一覧</h1>
+    </section>
 
-        <table>
-          <tr>
-            <th>ID</th>
-            <td>123</td>
-          </tr>
-          <tr>
-            <th>カテゴリ/サブカテゴリ</th>
-            <td>野菜</td>
-          </tr>
-          <tr>
-            <th>食材</th>
-            <td>小松菜</td>
-          </tr>
-          <tr>
-            <th>希望価格</th>
-            <td>1円</td>
-          </tr>
-          <tr>
-            <th>画像</th>
-            <td>画像</td>
-          </tr>
-        </table>
-        <section>
-          メモ内容が入ります。
-        </section>
+    <main class="request-background">
+      <div class="request-list-none-comment">
+        <p class="center small">リクエストしている食材はありません。</p>
+        <p class="center small">出荷してほしい食材をリクエストしてみませんか？</p>
+        <div class="center add-button">
+          <button type="button" name="button" class="center common-primary-button">リクエストを追加する</button>
+        </div>
+      </div>
+    </main>
 
-  </main>
-  <footer>
-    いろいろアイコンがあるやつ
-
-  </footer>
-
-</div>
+    <main>
+      <ul class="cf">
+        <li class="list-header">
+          <div class="part-left">
+            <span class="small pl">ID</span>
+          </div>
+          <div class="part-center">
+            <span class="small pl">カテゴリ</span>
+          </div>
+          <div class="part-right">
+            <span class="small pl">生産物</span>
+          </div>
+        </li>
+        <li>
+          <div class="part-left small pl pt pb list-next-arrow">
+            <p>123</p>
+          </div>
+          <div class="part-center small pl pt pb">
+            <p>野菜</p>
+          </div>
+          <div class="part-right small pl pt pb">
+            <p>小松菜</p>
+          </div>
+        </li>
+        <li>
+          <div class="part-left small pl pt pb">
+            <p>123</p>
+          </div>
+          <div class="part-center small pl pt pb">
+            <p>野菜</p>
+          </div>
+          <div class="part-right small pl pt pb">
+            <p>小松菜</p>
+          </div>
+        </li>
+        <li>
+          <div class="part-left small pl pt pb">
+            <p>123</p>
+          </div>
+          <div class="part-center small pl pt pb">
+            <p>野菜</p>
+          </div>
+          <div class="part-right small pl pt pb">
+            <p>小松菜</p>
+          </div>
+        </li>
+        <li>
+          <div class="part-left small pl pt pb">
+            <p>123</p>
+          </div>
+          <div class="part-center small pl pt pb">
+            <p>野菜</p>
+          </div>
+          <div class="part-right small pl pt pb">
+            <p>小松菜</p>
+          </div>
+        </li>
+      </ul>
+      <div class="right mt mb mr button-section">
+        <button class="common-forth-button">リクエストを追加する +</button>
+      </div>
+    </main>
+    <!--=====footer=====-->
+    <section class="footer_frame">
+      <ul class="nav_list cf">
+        <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+        <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+        <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+        <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+        <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+      </ul>
+    </section>
+  </div>
 </body>
