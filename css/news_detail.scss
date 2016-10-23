@@ -1,0 +1,23 @@
+@import "send_common.scss";
+
+article {
+  padding: $font-normal;
+  font-size: $font-normal;
+  li {
+    color: #4682B4;
+    margin-top: $font-normal;
+    &:before {
+      content: "・";
+    }
+  }
+
+  .caption {
+    margin-top: $font-normal;
+  }
+
+  .time {
+    margin-top: $font-normal;
+    float: right;
+    font-size: $font-smaller;
+  }
+}

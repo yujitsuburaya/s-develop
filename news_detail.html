@@ -16,13 +16,47 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="all" href="./css/style.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/news_detail.css" />
+<link rel="stylesheet" media="all" href="./css/slidebars.css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-  <div class="">
-    <section class="common-title-bar">
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
+
+  <div id="sb-site" class="main_content">
+    <!-- ヘッダー -->
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+    <section class="common-title-section">
       <h1>【send】新しい食材が入荷しました！</h1>
     </section>
     <article>
@@ -31,10 +65,10 @@
         <li>赤軸水菜 （100g 入）徳島県産</li>
         <li>【特価】トレヴィーゾ 長野県産</li>
       </ul>
-      <p>
+      <p class="caption">
         お伺いして、ご覧頂いた上でお買い頂くこともできますのでお気軽にお問い合わせ頂ければ幸いです！何卒宜しくお願い申し上げます。
       </p>
-      <time>2016/10/01 20:30</time>
+      <span class="time">2016/10/01 20:30</span>
     </article>
   </div>
 </body>

@@ -18,13 +18,76 @@
 <link rel="stylesheet" media="all" href="./css/reset.css" />
 <link rel="stylesheet" media="screen and (max-width: 767px)" href="./css/news_list.css" />
 <link rel="stylesheet" media="all" href="./css/slidebars.css" />
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/slidebars.js"></script>
+<script>
+  (function($) {
+    $(document).ready(function() {
+      $.slidebars();
+    });
+  }) (jQuery);
+</script>
 </head>
 <body id="">
-  <ul>
-    <li>
-      <time>2016/10/01 20:30</time>
-      <p>【send】新しい食材が入荷しました！</p>
-    </li>
-  </ul>
+  <!--=====sidemenu=====-->
+  <div class="sb-slidebar sb-left sb-active">
+    <ul class="mm_prf cf">
+      <li><a href=""><img src="images_new/icon/icon_noimage_chef.png" width="100%"></a></li>
+      <li>シェフの名前が入ります</li>
+    </ul>
+    <ul class="mm_list">
+      <li class=""><a href="order_sheet.html">オーダーする</a></li>
+      <li class=""><a href="order_history.html">オーダー履歴・変更</a></li>
+      <li class=""><a href="product_list.html">食材を探す</a></li>
+      <li class=""><a href="producerlist.html">生産者を探す</a></li>
+      <li class=""><a href="request_list.html">リクエスト追加</a></li>
+      <li class=""><a href="send_chat.html">SENDとチャット</a></li>
+      <li class=""><a href="news_list.html">お知らせ</a></li>
+      <li class=""><a href="setting.html">アカウント設定</a></li>
+    </ul>
+  </div>
+
+
+
+  <div id="sb-site" class="main_content">
+    <!-- ヘッダー -->
+    <nav class="sb-slide common-top-nav">
+      <div class="nav-container-underlay">
+        <p class="arrow-left" onclick="javascript:window.history.back(-1);return false;"></p>
+        <p id="mm_btn" class="sb-toggle-left"><img src="images_new/icon/icon_sidemenu-btn.png" width="20px" alt=""></p>
+        <h1 class="h_logo"><a href=""><img src="images_new/icon/send_logo_gr.png" width="40px" alt=""></a></h1>
+      </div>
+    </nav>
+    <!-- メイン -->
+    <ul>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>
+          【send】新しい食材が入荷しました！<br>
+          【send】新しい食材が入荷しました！
+        </p>
+      </li>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>【send】新しい食材が入荷しました！</p>
+      </li>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>【send】新しい食材が入荷しました！</p>
+      </li>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>【send】新しい食材が入荷しました！</p>
+      </li>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>【send】新しい食材が入荷しました！</p>
+      </li>
+      <li class="list-next-arrow">
+        <time>2016/10/01 20:30</time>
+        <p>【send】新しい食材が入荷しました！</p>
+      </li>
+    </ul>
+  </div>
+
 </body>

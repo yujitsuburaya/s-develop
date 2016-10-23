@@ -1,5 +1,15 @@
 @import "send_common.scss";
 
 li {
+  padding: 10px;
   border-bottom: $list-under-bar;
+
+  time {
+    margin-left: 10px;
+    font-size: $font-small;
+  }
+
+  p {
+    margin-top: 5px;
+  }
 }

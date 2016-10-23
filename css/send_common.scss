@@ -368,6 +368,18 @@ input, button, textarea, select {
   -webkit-border-radius: 20px;
 }
 
+.common-forth-button {
+  color: $color-red;
+  background-color: #FFFFFF;
+  font-weight:bold;
+  text-align:center;
+  padding:1em 2em;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: 1px solid $color-red;
+}
+
 .common-setting-button {
   background-color: $color-red;
   position: relative;
@@ -527,4 +539,21 @@ span.no-checked:after {
   //left: 0.5em;
   position: relative;
   background-size: 8px 9px;
+}
+
+/* 05_List */
+.list-next-arrow {
+  &:after {
+    position: absolute;
+    margin-left: 90%;
+    margin-top: -6%;
+    content: "";
+    vertical-align: middle;
+    width: 8px;
+    height: 8px;
+    border-top: 3px solid $color-light;
+    border-right: 3px solid $color-light;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
 }
