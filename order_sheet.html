@@ -63,108 +63,114 @@
     <section class="common-title-section">
       <h1>オーダーシート</h1>
     </section>
-    <div>
-      <span class="button-left mb">
-        <button class="common-primary-button ">新規</button>
-      </span>
-      <span class="button-right mb">
-        <button class="common-secondary-button">変更・履歴</button>
-      </span>
-    </div>
+    <ul class="order-page-btn cf">
+      <li class="on"><a href="order_sheet.html">新規</a></li>
+      <li class=""><a href="order_history.html">変更・履歴</a></li>
+    </ul>
     <main>
-      <ul class="cf">
-        <li>
+      <ul class="cf pd-orderlist">
+        <!--=============ordersheet_list==================-->
+        <li class="cf">
           <div class="part-left">
-            <p class="center">
-              <img src="./images_new/S__sample.jpg" alt="[TODO]" width="80%"/>
-            </p>
-            <p class="center">
-              <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="70%"/>
-            </p>
+            <p><img src="./images_new/S__sample.jpg" alt="食材の画像" width="100%" /></p>
+            <p class="trash"><img src="./images_new/icon/icon_trash.png" alt="削除" width="100%" /></p>
           </div>
           <div class="part-center">
-            <p class="small">いい感じの赤いトマト(100g入)</p>
-            <p class="small">北海道産</p>
-            <p class="small">¥150 / pc(pcってなんだ？)</p>
-            <p class="smallest light"><span>徳島県</span><span>徳島有機ファーム</span></p>
-
+            <p class="">食材名が入ります(100g入)</p>
+            <p class="">¥150 &nbsp;/pc</p>
+            <p class=""><span>徳島県</span><span>徳島有機ファーム</span></p>
           </div>
           <div class="part-right">
-            <div class="counter">
-              <span onclick="counter(-1)" class="counter-minus">-</span>
-              <input type="text" name="count" size="3" value="0" id="count_value" class="counter-num">
-              <span onclick="counter(1)" class="counter-plus">+</span>
+            <div class="counter cf">
+              <p onclick="counter(-1)" class="counter-minus">-</p>
+              <p><input type="text" name="count" size="3" value="0" id="count_value" class="counter-num"></p>
+              <p onclick="counter(1)" class="counter-plus">+</p>
             </div>
           </div>
         </li>
-      </ul>
-      <ul class="cf">
-        <li>
+        <!--=============ordersheet_list==================-->
+        <li class="cf">
           <div class="part-left">
-            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
-            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+            <p><img src="./images_new/S__sample.jpg" alt="食材の画像" width="100%" /></p>
+            <p class="trash"><img src="./images_new/icon/icon_trash.png" alt="削除" width="100%" /></p>
           </div>
           <div class="part-center">
-            <p>いい感じの赤いトマト(100g入)</p>
-            <p>北海道産</p>
-            <p>¥150 / pc(pcってなんだ？)</p>
-            <span></span>
+            <p class="">食材名が入ります(100g入)</p>
+            <p class="">¥150 &nbsp;/pc</p>
+            <p class=""><span>徳島県</span><span>徳島有機ファーム</span></p>
           </div>
-          <div class="part-right" id="count_value_area">
-            <div class="counter">
-              <span onclick="counter(-1)" class="counter-minus">-</span>
-              <span id="count_value_text" class="counter-num">0</span>
-              <input type="hidden" name="count" id="count_value" value="0">
-              <span onclick="counter(1)" class="counter-plus">+</span>
+          <div class="part-right">
+            <div class="counter cf">
+              <p onclick="counter(-1)" class="counter-minus">-</p>
+              <p><input type="text" name="count" size="3" value="0" id="count_value" class="counter-num"></p>
+              <p onclick="counter(1)" class="counter-plus">+</p>
             </div>
           </div>
         </li>
-      </ul>
-      <ul class="cf">
-        <li>
+        <!--=============ordersheet_list==================-->
+        <li class="cf">
           <div class="part-left">
-            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
-            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+            <p><img src="./images_new/S__sample.jpg" alt="食材の画像" width="100%" /></p>
+            <p class="trash"><img src="./images_new/icon/icon_trash.png" alt="削除" width="100%" /></p>
           </div>
           <div class="part-center">
-            <p>いい感じの赤いトマト(100g入)</p>
-            <p>北海道産</p>
-            <p>¥150 / pc(pcってなんだ？)</p>
-            <span></span>
+            <p class="">食材名が入ります(100g入)</p>
+            <p class="">¥150 &nbsp;/pc</p>
+            <p class=""><span>徳島県</span><span>徳島有機ファーム</span></p>
           </div>
-          <div class="part-right" id="count_value_area">
-            <div class="counter">
-              <span onclick="counter(-1)" class="counter-minus">-</span>
-              <span id="count_value_text" class="counter-num">0</span>
-              <input type="hidden" name="count" id="count_value" value="0">
-              <span onclick="counter(1)" class="counter-plus">+</span>
+          <div class="part-right">
+            <div class="counter cf">
+              <p onclick="counter(-1)" class="counter-minus">-</p>
+              <p><input type="text" name="count" size="3" value="0" id="count_value" class="counter-num"></p>
+              <p onclick="counter(1)" class="counter-plus">+</p>
             </div>
           </div>
         </li>
-      </ul>
-      <ul class="cf">
-        <li>
+        <!--=============ordersheet_list==================-->
+        <li class="cf">
           <div class="part-left">
-            <img src="./images_new/S__sample.jpg" alt="[TODO]" width="100%"/>
-            <img src="./images_new/icon/icon_trash.png" alt="[TODO]" width="80%"/>
+            <p><img src="./images_new/S__sample.jpg" alt="食材の画像" width="100%" /></p>
+            <p class="trash"><img src="./images_new/icon/icon_trash.png" alt="削除" width="100%" /></p>
           </div>
           <div class="part-center">
-            <p>いい感じの赤いトマト(100g入)</p>
-            <p>北海道産</p>
-            <p>¥150 / pc(pcってなんだ？)</p>
-            <span></span>
+            <p class="">食材名が入ります(100g入)</p>
+            <p class="">¥150 &nbsp;/pc</p>
+            <p class=""><span>徳島県</span><span>徳島有機ファーム</span></p>
           </div>
-          <div class="part-right" id="count_value_area">
-            <div class="counter">
-              <span onclick="counter(-1)" class="counter-minus">-</span>
-              <span id="count_value_text" class="counter-num">0</span>
-              <input type="hidden" name="count" id="count_value" value="0">
-              <span onclick="counter(1)" class="counter-plus">+</span>
+          <div class="part-right">
+            <div class="counter cf">
+              <p onclick="counter(-1)" class="counter-minus">-</p>
+              <p><input type="text" name="count" size="3" value="0" id="count_value" class="counter-num"></p>
+              <p onclick="counter(1)" class="counter-plus">+</p>
             </div>
           </div>
         </li>
+
       </ul>
     </main>
+    <!-- <p class="red center smallest mg10">AM6:00までにご注文完了していただくと当日出荷が可能です</p>
+    <p class="common-setting-button "><a href="order_confirm.html">オーダー内容を確認する</a></p> -->
+
+
+    <div class="fix-order-frame">
+      <p class="total_price_text smallest">AM6:00までにご注文完了していただくと当日出荷が可能です</p>
+      <p class="common-setting-button "><a href="order_confirm.html">オーダー内容を確認する</a></p>
+    </div>
+
+
+
+
+    <!--=====footer=====-->
+      <section class="footer_frame">
+        <ul class="nav_list cf">
+          <li><a href="producer_list.html"><img src="images_new/icon/icon_footnav-on1.png" alt="" width="30px"><p>生産者一覧</p></a></li>
+          <li><a href="product_list.html"><img src="images_new/icon/icon_footnav-on2.png" alt="" width="30px"><p>食材一覧</p><a/></li>
+          <li><a href="news_list.html"><img src="images_new/icon/icon_footnav-on3.png" alt="" width="30px"><p>お知らせ</p></a></li>
+          <li><a href="send_chat.html"><img src="images_new/icon/icon_footnav-on4.png" alt="" width="30px"><p>チャット</p></a></li>
+          <li><a href="order_sheet.html"><img src="images_new/icon/icon_footnav-on5.png" alt="" width="30px"><p>オーダー</p></a></li>
+        </ul>
+      </section>
+
   </div>
 </body>
 <script src="js/counter.js"></script>

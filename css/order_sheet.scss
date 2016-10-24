@@ -1,61 +1,79 @@
-@import "send_common.scss";
+// @import "send_common.scss";
+@import "order_history.scss";
 
-// [TEMP] delete later
-ul{
-  border-bottom: $list-under-bar;
+#sb-site{
+  padding-bottom: 116px !important;
+}
+
+.pd-orderlist{
+  width: 100%;
+  li{
+    width: 96%;
+    padding: 5px 2%;
+    border-bottom: 0.5px solid $color-lightest;
+  }
 }
 
 .part-left {
   float: left;
-  width: 10%;
+  width: 15%;
+  p{
+    text-align: center;
+    &:nth-child(1){
+      overflow: hidden;
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+      border-radius: 15px;
+      img{
+        width: 150%;
+      }
+    }
+    &:nth-child(2){
+      width: 30px;
+      margin: 5px auto 0;
+    }
+  }
 }
 
 .part-center {
   float: left;
-  width: 60%;
+  padding-left: 2%;
+  width: 48%;
+  p{
+    &:not(:last-child){
+      font-size: 12px;
+      margin-top: 5px;
+    }
+    &:last-child{
+      margin-top: 10px;
+      font-size: 10px;
+      color: $color-lighter;
+    }
+
+  }
 }
 
 .part-right {
-  width: 30%;
+  width: 35%;
   float: right;
-}
-
-.button-left {
-  margin-left: 25%;
-  float: left;
-}
-
-.button-right {
-  float: right;
-  margin-right: 25%;
-}
-
-// counter
-.counter {
-  border: 1px solid $color-light;
-  color: $color-light;
-  font-weight:bold;
-  text-align:center;
-  padding:0.5em 1em;
-  border-radius: 13px;
-  margin: 0.5em;
-
-  .counter-minus {
-    float: left;
-  }
-  .counter-plus {
-    float: right;
-  }
-
-  input {
+  margin-top: 10px;
+  .counter {
+    width: 100%;
+    border: 1px solid $color-lighter;
     color: $color-light;
     font-weight:bold;
     text-align:center;
-    border-color: $color-light;
-    border-radius: 8px;
-  }
-
-  .counter-num {
-    font-size: $font-biggest;
+    border-radius: 30px;
+    padding: 10px 0;
+    p{
+      float: left;
+      width: 33%;
+      text-align: center;
+      input{
+        text-align: center;
+        font-size: $font-biggest;
+      }
+    }
   }
 }

@@ -13,7 +13,7 @@ $font-small:12px;
 $font-normal:14px;
 $font-bigger:16px;
 $font-biggest:18px;
-$list-under-bar: 1px solid $color-lighter;
+$list-under-bar: 0.5px solid $color-lighter;
 
 body {
   color:$color-base;
@@ -311,7 +311,23 @@ input, button, textarea, select {
     background-size:25px;
   }
 }
-
+.total_price_text{
+  text-align: center;
+  color: $color-red;
+  font-size: $font-normal;
+  padding: 5px 0;
+  background-color: #ffffff;
+}
+.fix-order-confirm-btn{
+  background-color:$color-red;
+  color:#ffffff;
+  font-size:$font-bigger;
+  font-weight:bold;
+  text-align:center;
+  padding:10px 0;
+  background-size:25px;
+  background-color: $color-red;
+}
 
 .footer_frame{
   position: fixed;
@@ -336,14 +352,20 @@ input, button, textarea, select {
 /* 01_Common Parts */
 
 .common-primary-button {
-  color: $color-lightest;
+  width: 70%;
+  margin: 10px auto;
+  color: #ffffff;
   background-color: $color-red;
   font-weight:bold;
   text-align:center;
-  padding:1em 2em;
+  padding:10px 0;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
+  a{
+    color: #ffffff;
+  }
+
 }
 
 .common-secondary-button {
@@ -351,10 +373,13 @@ input, button, textarea, select {
   background-color: $color-lightest;
   font-weight:bold;
   text-align:center;
-  padding:1em 2em;
+  padding:10px 0;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
+  a{
+    color: #ffffff;
+  }
 }
 
 .common-third-button {
@@ -384,10 +409,14 @@ input, button, textarea, select {
   background-color: $color-red;
   position: relative;
   width: 100%;
-  height: 40px;
   text-align: center;
-  color: $color-lightest;
+  color: #ffffff;
   z-index: -10;
+  padding: 10px 0;
+  a{
+    color: #ffffff;
+    display: block;
+  }
 }
 
 .common-setting-button:before {
@@ -446,7 +475,9 @@ input, button, textarea, select {
 .none {
   display: none;
 }
-
+.mg10 {
+  margin: 10px auto;
+}
 .mt {
   margin-top: 0.5em;
 }
@@ -479,16 +510,14 @@ input, button, textarea, select {
   padding-right: 0.5em;
 }
 
-
-
 .common-title-section {
     background-color: $color-lightest;
     width: 100%;
     text-align: center;
-    padding: 0.5em 0;
+    padding: 5px 0;
     h1{
       font-size: $font-normal;
-      font-weight: normal;    
+      font-weight: normal;
     }
 }
 
@@ -523,6 +552,9 @@ input, button, textarea, select {
 
 .lightest {
   color: $color-lightest;
+}
+.red{
+  color: $color-red;
 }
 
 /* 04_Status */
