@@ -35,9 +35,11 @@ ul{
   width: 100%;
 }
 
-li {
-  display: flex;
-  border-bottom: $list-under-bar;
+main{
+  li {
+    display: flex;
+    border-bottom: $list-under-bar;
+  }
 }
 
 .part-left {
