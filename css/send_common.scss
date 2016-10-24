@@ -596,3 +596,33 @@ span.no-checked:after {
 .info-lavel {
   background-color: $color-lightest;
 }
+
+.order-page-btn{
+  width: 60%;
+  margin: 10px auto;
+  margin-left: 20%;
+  li{
+    float: left;;
+    width: 45%;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 1px solid $color-red;
+    font-size: $font-smallest;
+    padding: 8px 0;
+    a{
+      color: $color-red;
+      display: block;
+    }
+    &:nth-child(1){
+      margin-right: 8%;
+    }
+  }
+  .on{
+    background-color: $color-red;
+    a{
+      color:#ffffff;
+    }
+  }
+
+}

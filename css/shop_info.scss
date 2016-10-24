@@ -1,0 +1,71 @@
+@import "send_common.scss";
+
+.shop-info-frame{
+  width: 90%;
+  margin: 10px auto;
+  input{
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+}
+.shop-info-list{
+  width: 100%;
+  li{
+    width: 100%;
+    min-height:40px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 0.5px solid $color-lightest;
+    &:after{
+      clear: both;
+    }
+    p{
+      padding: 10px 0;
+      width: 25%;
+      float: left;
+    }
+  }
+
+  input[type=radio] {
+    display: none;
+  }
+  // input[type=radio]:checked + label::after{
+  //     background-color: #ffffff;
+  //     border: 1px solid $color-green;
+  //     color:$color-green;
+  //     padding: 5px 10px;
+  //     border-radius: 20px;
+  // }
+
+  .radio:hover{
+    background-color: #ffffff;
+    border: 1px solid $color-green;
+    color:$color-green;
+    padding: 5px 10px;
+    border-radius: 20px;
+  }
+  input[type=radio]:checked + .radio:before {
+    opacity: 1;
+  }
+
+
+}
+
+
+.remark_text{
+  padding: 10px 2%;
+  color:#dcdcdc;
+}
+
+.caution_text{
+  padding: 10px 2%;
+  color: $color-light;
+  dt{
+    font-size: $font-small;
+    margin-bottom: 10px;
+  }
+  dd{
+    font-size: $font-smallest;
+  }
+}
