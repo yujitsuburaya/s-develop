@@ -1,0 +1,126 @@
+@import "send_common.scss";
+
+body{
+  background-color: $color-lightest !important;
+}
+a{
+  display: block;
+}
+.txtc{
+  text-align: center;
+}
+.size_10{
+  font-size: 10px;
+}
+.mg-50{
+  margin-top: 50px;
+}
+h1{
+  width: 100px;
+  margin: 0 auto;
+}
+.line-title{
+  position: relative;
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  p:nth-child(1){
+    width: 100%;
+    border-top: 0.5px solid #dcdcdc;
+    position: absolute;
+    top:15px;
+    z-index: -50;
+  }
+  p:nth-child(2){
+    font-size: 12px;
+    color: #dcdcdc;
+    background-color: $color-lightest;
+    padding: 10px;
+    width: 40px;
+    margin: 0 auto;
+
+  }
+}
+
+.register-title {
+  border-bottom: $list-under-bar;
+  .title-text {
+    text-align: center;
+    margin-top: 7px;
+  }
+}
+.register-caption {
+  margin-top: 10px;
+}
+.login-input-frame{
+  width: 86%;
+  margin: 30px auto 10px auto;
+  background-color: #ffffff;
+  border-radius: 5px;
+  p{
+    &:first-child{
+      border-bottom: 0.5px solid #dcdcdc;
+    }
+    input{
+      font-size:$font-normal;
+      color: $color-lighter;
+      padding: 10px 2%;
+      width: 96%;
+    }
+  }
+}
+
+.btn-login{
+  width: 60%;
+  margin: 10px auto;
+  background-color: #ffffff;
+  color: $color-red;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 20px;
+  border: 1px solid $color-red;
+  a{
+    color: $color-red;
+  }
+}
+.login-pwd-check{
+  width: 90%;
+  margin: 0 auto;
+  input{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dcdcdc;
+    margin-right: 5px;
+  }
+}
+.login-subtext{
+  font-size: 8px;
+  margin: 10px auto;
+  a{
+    color: $color-lighter;
+  }
+}
+.reg-btn-frame{
+  p{
+    width: 60%;
+    margin: 10px auto;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-size: 10px;
+    a{
+      color: #ffffff;
+    }
+    &:nth-child(1){
+      background-color: #3b5998;
+    }
+    &:nth-child(2){
+      background-color: #ffffff;
+      border: 1px solid $color-green;
+      a{
+        color:$color-green;
+      }
+    }
+  }
+}

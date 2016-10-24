@@ -16,23 +16,30 @@
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 <![endif]-->
 <link rel="stylesheet" media="all" href="./css/reset.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_common.css" />
-<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/send_login.css" />
+<link rel="stylesheet" media="screen and (max-width: 767px)" href="css/login.css" />
 <script src="js/jquery-1.11.0.min.js"></script>
 </head>
 <body id="">
-  <h1><img src="new_images/icon/send_logo_wh" alt="send" width="100%"></h1>
+  <h1 class="mg-50"><img src="images_new/icon/send_logo_wh.png" alt="send" width="100%"></h1>
+  <p class="txtc size_10">購入者画面</p>
 
-  <p><input type="text" name="" value="" placeholder="メールアドレスを入力"></p>
-  <p><input type="password" name="" value="" placeholder="パスワードを入力"></p>
+  <div class="login-input-frame">
+    <p><input type="text" name="" value="" placeholder="メールアドレスを入力"></p>
+    <p><input type="password" name="" value="" placeholder="パスワードを入力"></p>
+  </div>
+  <p class="login-pwd-check login-subtext"><input type="ceckbox" name="" value=""/>パスワードを保存する</p>
 
-  <p>ログイン</p>
-  <p>パスワードをお忘れの方</p>
+  <p class="btn-login"><a href="">ログイン</a></p>
+  <p class="login-subtext txtc"><a href="">パスワードをお忘れの方</a></p>
 
-  <p>OR</p>
+  <section class="line-title">
+    <p></p>
+    <p>OR</p>
+  </section>
 
-  <p>Facebookで登録・ログイン</p>
-  <p>メールアドレスでの登録はこちら</p>
-
+  <section class="reg-btn-frame">
+    <p class="fb"><a href="">Facebookで登録・ログイン</a></p>
+    <p class="address"><a href="">メールアドレスでの登録はこちら</a></p>
+  </section>
 
 </body>

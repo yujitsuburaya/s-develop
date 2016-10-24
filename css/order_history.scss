@@ -64,3 +64,32 @@
     }
   }
 }
+.order-history-list{
+  li{
+    padding: 10px 2%;
+    width: 96%;
+    clear: both;
+    font-size: 12px;
+    &:after{
+      clear:both;
+    }
+
+    p{
+      height: 45px;
+      &:nth-child(1){
+        float: left;
+        width: 70%;
+        span{
+          font-size: 8px;
+          color: $color-lighter;
+        }
+      }
+      &:nth-child(2){
+        float: right;;
+        width: 30%;
+        text-align: center;
+
+      }
+    }
+  }
+}
